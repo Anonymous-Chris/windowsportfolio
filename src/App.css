@@ -11,6 +11,6 @@
   left: 0;
   width: inherit;
   min-height: 3rem;
-  background: gray;
+  background: rgba(3, 21, 41, 0.4);
   display: flex;
 }

@@ -1,8 +1,55 @@
-.taskbar{
-    width: 100%;
-    height: 100%;
+.taskbar {
+    /* width: 100%;
+    height: 100%; */
     text-align: center;
+    align-items: center;
     justify-content: center;
     vertical-align: middle;
-    margin: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.taskbar .eachIcon {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    height: 100%;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.taskbar .eachIcon img {
+    height: 32px;
+    width: 32px;
+}
+
+.taskbar .eachIcon:hover {
+    cursor: pointer;
+    background: rgb(0, 17, 81);
+    border-radius: 4px;
+}
+
+/* divide 2:1 for flex items */
+.taskbar-center {
+    flex: 2;
+    margin-left: 20%;
+}
+.taskbar-right {
+    flex: 1;
+    font-size: 1.3rem;
+}
+.taskbar-right > div {
+    height: 100%;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.taskbar-right > div:hover {
+    cursor: pointer;
+    background: rgb(0, 17, 81);
+}
+
+.taskbar-right .dateTime{
+    margin-left: 40px;
 }
