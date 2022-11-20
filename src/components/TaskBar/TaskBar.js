@@ -46,7 +46,7 @@ const TaskBar = () => {
             </div>
             <div
                 className=" flex w-1/4 items-center justify-center gap-2 bg-taskbar text-center
-                align-middle text-xl text-white"
+                align-middle text-xl "
             >
                 <UpArrow></UpArrow>
                 <Weather></Weather>
