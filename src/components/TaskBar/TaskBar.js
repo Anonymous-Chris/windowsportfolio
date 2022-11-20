@@ -16,7 +16,7 @@ const TaskBar = () => {
         console.log(clicked)
     }
     return (
-        <div className="flex w-full">
+        <div className="flex w-full select-none">
             <div className="flex w-3/4 items-center justify-center gap-3 bg-taskbar pl-[20%] text-center align-middle">
                 <TaskBarIcons
                     source={WindowsIcon}
