@@ -1,10 +1,3 @@
-body {
-  margin: 0;
-}
-html { 
-  background: url(./assets/wallpaper/default_dark.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
