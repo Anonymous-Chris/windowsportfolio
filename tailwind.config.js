@@ -10,7 +10,8 @@ module.exports = {
             }, colors: {
                 'taskbar': ' rgba(3, 21, 41, 0.4)',
                 'taskbar-hover': 'rgb(0, 17, 81)',
-                'desktop-icons-hover':'rgba(164,219,232,0.4)'
+                'desktop-icons-hover': 'rgba(164,219,232,0.4)',
+                'calender': 'rgb(58,131,251)'
             }
         },
     },

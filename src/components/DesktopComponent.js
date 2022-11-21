@@ -22,7 +22,9 @@ const DesktopComponent = () => {
             <div className="absolute bottom-0 left-0 flex w-full">
                 <TaskBar></TaskBar>
             </div>
-            <button onClick={changeTheme}>Change theme</button>
+            <button className=" h-10" onClick={changeTheme}>
+                Change theme
+            </button>
         </div>
     )
 }

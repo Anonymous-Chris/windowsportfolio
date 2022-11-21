@@ -5,7 +5,7 @@ import GithubIcon from "../../assets/icons/github.svg"
 import MicrosoftEdge from "../../assets/icons/microsoft-edge.svg"
 import WindowsIcon from "../../assets/icons/windows.png"
 import Battery from "./Battery"
-import DatePicker from "./DatePicker"
+import DatePickerComponent from "./DatePickerComponent"
 import Sound from "./Sound"
 import TaskBarIcons from "./TaskBarIcons"
 import UpArrow from "./UpArrow"
@@ -17,7 +17,7 @@ const TaskBar = () => {
     }
     return (
         <div className="flex w-full select-none">
-            <div className="flex w-3/4 items-center justify-center gap-3 bg-taskbar pl-[20%] text-center align-middle">
+            <div className="flex w-[70%] items-center justify-center gap-3 bg-taskbar pl-[20%] text-center align-middle">
                 <TaskBarIcons
                     source={WindowsIcon}
                     altText="windowsIcon"
@@ -45,7 +45,7 @@ const TaskBar = () => {
                 ></TaskBarIcons>
             </div>
             <div
-                className=" flex w-1/4 items-center justify-center gap-2 bg-taskbar text-center
+                className="flex w-[30%] items-center justify-center gap-2 bg-taskbar text-center
                 align-middle text-xl "
             >
                 <UpArrow></UpArrow>
@@ -53,7 +53,7 @@ const TaskBar = () => {
                 <Wifi></Wifi>
                 <Battery></Battery>
                 <Sound></Sound>
-                <DatePicker></DatePicker>
+                <DatePickerComponent></DatePickerComponent>
             </div>
         </div>
     )
