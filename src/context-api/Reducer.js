@@ -1,7 +1,5 @@
 export const initialState = {
-    darkTheme: localStorage.getItem("darkTheme")
-        ? JSON.parse(localStorage.getItem("darkTheme"))
-        : true,
+    darkTheme: localStorage.getItem("darkTheme") ? JSON.parse(localStorage.getItem("darkTheme")) : true,
     // check if all of these are open in taskbar
     windowsIconClicked: false,
     chromeIconClicked: false,
@@ -9,6 +7,8 @@ export const initialState = {
     fileIconClicked: false,
     settingsIconClicked: false,
     upArrowIconClicked: false,
+    resumeIconClicked: false,
+    resumePdfIconClicked: false,
 }
 
 const reducer = (state, action) => {
@@ -35,6 +35,8 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 settingsIconClicked: action.settingsIconClicked,
+                resumeIconClicked: action.resumeIconClicked,
+                resumePdfIconClicked: action.resumePdfIconClicked,
             }
         default:
             return state

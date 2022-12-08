@@ -15,11 +15,13 @@ const DesktopComponent = () => {
             chromeIconClicked,
             microsoftedgeClicked,
             fileIconClicked,
+            upArrowIconClicked,
             // desktop icons
             settingsIconClicked,
-            upArrowIconClicked,
+            resumeIconClicked,
+            resumePdfIconClicked
         },
-        dispatch,
+        dispatch
     ] = useStateValue()
 
     useEffect(() => {
@@ -33,6 +35,10 @@ const DesktopComponent = () => {
             setActiveTab("fileIcon")
         } else if (settingsIconClicked) {
             setActiveTab("settings")
+        } else if (resumeIconClicked) {
+            setActiveTab("resume")
+        } else if (resumePdfIconClicked) {
+            setActiveTab("resume (PDF)")
         }
     }, [
         windowsIconClicked,
@@ -40,6 +46,8 @@ const DesktopComponent = () => {
         microsoftedgeClicked,
         fileIconClicked,
         settingsIconClicked,
+        resumeIconClicked,
+        resumePdfIconClicked
     ])
     const showWindow = (value, clicked) => {
         // setChromeWindowVisibility(value)
@@ -53,20 +61,17 @@ const DesktopComponent = () => {
         ) {
             dispatch({
                 type: "UPDATE_TASKBAR_ACTION",
-                windowsIconClicked:
-                    clicked === "windowsIcon" ? value : windowsIconClicked,
-                chromeIconClicked:
-                    clicked === "chromeIcon" ? value : chromeIconClicked,
-                microsoftedgeClicked:
-                    clicked === "microsoftedge" ? value : microsoftedgeClicked,
-                fileIconClicked:
-                    clicked === "fileIcon" ? value : fileIconClicked,
+                windowsIconClicked: clicked === "windowsIcon" ? value : windowsIconClicked,
+                chromeIconClicked: clicked === "chromeIcon" ? value : chromeIconClicked,
+                microsoftedgeClicked: clicked === "microsoftedge" ? value : microsoftedgeClicked,
+                fileIconClicked: clicked === "fileIcon" ? value : fileIconClicked
             })
         } else {
             dispatch({
                 type: "UPDATE_DESKTOP_ACTION",
-                settingsIconClicked:
-                    clicked === "settings" ? value : settingsIconClicked,
+                settingsIconClicked: clicked === "settings" ? value : settingsIconClicked,
+                resumeIconClicked: clicked === "resume" ? value : resumeIconClicked,
+                resumePdfIconClicked: clicked === "resume (PDF)" ? value : resumePdfIconClicked
             })
         }
     }
@@ -83,7 +88,7 @@ const DesktopComponent = () => {
             } bg-cover bg-center text-white`}
         >
             <div className="flex w-full justify-between">
-                <div className="fixed max-h-[99%] max-w-[99%]">
+                <div className="fixed  max-h-[99%]  max-w-[99%]">
                     {/* chrome click */}
                     {chromeIconClicked && (
                         <WindowComponent
@@ -107,6 +112,24 @@ const DesktopComponent = () => {
                         <WindowComponent
                             showWindow={showWindow}
                             clicked="settings"
+                            getActiveTab={getActiveTab}
+                            activeTab={activeTab}
+                        ></WindowComponent>
+                    )}
+                    {/* resume clicked */}
+                    {resumeIconClicked && (
+                        <WindowComponent
+                            showWindow={showWindow}
+                            clicked="resume"
+                            getActiveTab={getActiveTab}
+                            activeTab={activeTab}
+                        ></WindowComponent>
+                    )}
+                    {/* resume pdf clicked */}
+                    {resumePdfIconClicked && (
+                        <WindowComponent
+                            showWindow={showWindow}
+                            clicked="resume (PDF)"
                             getActiveTab={getActiveTab}
                             activeTab={activeTab}
                         ></WindowComponent>
