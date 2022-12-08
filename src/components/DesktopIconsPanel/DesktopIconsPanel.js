@@ -7,10 +7,18 @@ import RecycleBin from "../../assets/icons/recycle-bin.png"
 import Settings from "../../assets/icons/settings.png"
 import UserFolder from "../../assets/icons/user-folder.png"
 import Word from "../../assets/icons/word.png"
+import { useStateValue } from "../../context-api/StateProvider"
 import DesktopIcons from "./DesktopIcons"
+
 const DesktopIconsPanel = () => {
+    const [{ settingsIconClicked }, dispatch] = useStateValue()
     const clickedIcon = (clicked) => {
-        console.log(clicked)
+        // console.log(clicked)
+        dispatch({
+            type: "UPDATE_DESKTOP_ACTION",
+            settingsIconClicked:
+                clicked === "settings" ? true : settingsIconClicked,
+        })
     }
     return (
         <div className="flex h-full w-full flex-col flex-wrap content-start gap-2">

@@ -4,6 +4,7 @@ import FileIcon from "../../assets/icons/file_explorer.png"
 import GithubIcon from "../../assets/icons/github.svg"
 import MicrosoftEdge from "../../assets/icons/microsoft-edge.svg"
 import WindowsIcon from "../../assets/icons/windows.png"
+import { useStateValue } from "../../context-api/StateProvider"
 import Battery from "./Battery"
 import DatePickerComponent from "./DatePickerComponent"
 import Sound from "./Sound"
@@ -12,12 +13,43 @@ import UpArrow from "./UpArrow"
 import Weather from "./Weather"
 import Wifi from "./Wifi"
 const TaskBar = () => {
+    const [
+        {
+            windowsIconClicked,
+            chromeIconClicked,
+            microsoftedgeClicked,
+            fileIconClicked,
+            upArrowIconClicked,
+        },
+        dispatch,
+    ] = useStateValue()
+
     const clickedIcon = (clicked) => {
-        console.log(clicked)
+        dispatch({
+            type: "UPDATE_TASKBAR_ACTION",
+            windowsIconClicked:
+                clicked === "windowsIcon"
+                    ? !windowsIconClicked
+                    : windowsIconClicked,
+            chromeIconClicked:
+                clicked === "chromeIcon"
+                    ? !chromeIconClicked
+                    : chromeIconClicked,
+            microsoftedgeClicked:
+                clicked === "microsoftedge"
+                    ? !microsoftedgeClicked
+                    : microsoftedgeClicked,
+            fileIconClicked:
+                clicked === "fileIcon" ? !fileIconClicked : fileIconClicked,
+            upArrowIconClicked:
+                clicked === "upArrowIcon"
+                    ? !upArrowIconClicked
+                    : upArrowIconClicked,
+        })
     }
     return (
         <div className="flex w-full select-none">
-            <div className="flex w-[70%] items-center justify-center gap-3 bg-taskbar pl-[20%] text-center align-middle">
+            <div className="flex w-[70%] items-center justify-center gap-3 bg-taskbar pl-[30%] text-center align-middle">
                 <TaskBarIcons
                     source={WindowsIcon}
                     altText="windowsIcon"
@@ -42,13 +74,18 @@ const TaskBar = () => {
                     source={GithubIcon}
                     altText="githubIcon"
                     clickedIcon={clickedIcon}
+                    url="https://github.com/Anonymous-Chris"
                 ></TaskBarIcons>
             </div>
             <div
-                className="flex w-[30%] items-center justify-center gap-2 bg-taskbar text-center
-                align-middle text-xl "
+                className="z-10 flex w-[30%] items-center justify-end gap-2 bg-taskbar
+                text-center align-middle text-xl"
             >
-                <UpArrow></UpArrow>
+                <UpArrow
+                    altText="upArrowIcon"
+                    clickedIcon={clickedIcon}
+                    show={upArrowIconClicked}
+                ></UpArrow>
                 <Weather></Weather>
                 <Wifi></Wifi>
                 <Battery></Battery>

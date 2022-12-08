@@ -2,7 +2,7 @@ import React from "react"
 
 const DesktopIcons = (props) => {
     const clickedIcon = () => {
-        console.log(props.altText, "clicked")
+        // console.log(props.altText, "clicked")
         props.clickedIcon(props.altText)
     }
     return (

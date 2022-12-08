@@ -1,8 +1,14 @@
 import React from "react"
 
-const UpArrow = () => {
+const UpArrow = (props) => {
+    const clickedIcon = () => {
+        props.clickedIcon(props.altText)
+    }
     return (
-        <div className="flex h-full cursor-pointer items-center hover:bg-taskbar-hover">
+        <div
+            className="flex h-full cursor-pointer items-center hover:bg-taskbar-hover"
+            onClick={clickedIcon}
+        >
             <svg
                 stroke="currentColor "
                 fill="none"

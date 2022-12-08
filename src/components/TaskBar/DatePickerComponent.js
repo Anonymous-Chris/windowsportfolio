@@ -10,7 +10,7 @@ const DatePickerComponent = () => {
         setFocus(!focused)
     }
     return (
-        <div className="mx-auto">
+        <div className="">
             <SingleDatePicker
                 date={moment()} // momentPropTypes.momentObj or null
                 onDateChange={changeDate} // PropTypes.func.isRequired

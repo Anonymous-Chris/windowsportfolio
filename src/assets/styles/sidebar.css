@@ -1,0 +1,26 @@
+.pg-viewer-wrapper {
+    @apply overflow-hidden;
+}
+
+.slide-in {
+    @apply z-10 overflow-hidden mr-4;
+}
+
+.slide-in.from-right {
+    @apply right-0 h-[98vh];
+}
+
+.slide-in-content {
+    transition: transform 0.5s ease;
+    @apply bg-gray-200;
+}
+
+.slide-in.from-right .slide-in-content {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+
+.slide-in.show .slide-in-content {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
