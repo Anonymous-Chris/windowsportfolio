@@ -11,14 +11,16 @@ import { useStateValue } from "../../context-api/StateProvider"
 import DesktopIcons from "./DesktopIcons"
 
 const DesktopIconsPanel = () => {
-    const [{ settingsIconClicked, resumeIconClicked, resumePdfIconClicked }, dispatch] = useStateValue()
+    const [{ menuIconClicked, settingsIconClicked, resumeIconClicked, resumePdfIconClicked }, dispatch] =
+        useStateValue()
     const clickedIcon = (clicked) => {
         console.log(clicked)
         dispatch({
             type: "UPDATE_DESKTOP_ACTION",
             settingsIconClicked: clicked === "settings" ? true : settingsIconClicked,
             resumeIconClicked: clicked === "resume" ? true : resumeIconClicked,
-            resumePdfIconClicked: clicked === "resume (PDF)" ? true : resumePdfIconClicked
+            resumePdfIconClicked: clicked === "resume (PDF)" ? true : resumePdfIconClicked,
+            menuIconClicked: clicked === "menu" ? !menuIconClicked : menuIconClicked
         })
     }
     return (

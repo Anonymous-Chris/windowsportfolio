@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react"
 import { useStateValue } from "../context-api/StateProvider"
+import Navbar from "../Navigation/Navbar"
 import DesktopIconsPanel from "./DesktopIconsPanel/DesktopIconsPanel"
 import SideBar from "./Sidebar/SideBar"
 import TaskBar from "./TaskBar/TaskBar"
 import WindowComponent from "./Window/WindowComponent"
+
 const DesktopComponent = () => {
     const [activeTab, setActiveTab] = useState("")
 
@@ -19,7 +21,8 @@ const DesktopComponent = () => {
             // desktop icons
             settingsIconClicked,
             resumeIconClicked,
-            resumePdfIconClicked
+            resumePdfIconClicked,
+            menuIconClicked
         },
         dispatch
     ] = useStateValue()
@@ -39,6 +42,8 @@ const DesktopComponent = () => {
             setActiveTab("resume")
         } else if (resumePdfIconClicked) {
             setActiveTab("resume (PDF)")
+        } else if (menuIconClicked) {
+            setActiveTab("menu")
         }
     }, [
         windowsIconClicked,
@@ -47,7 +52,8 @@ const DesktopComponent = () => {
         fileIconClicked,
         settingsIconClicked,
         resumeIconClicked,
-        resumePdfIconClicked
+        resumePdfIconClicked,
+        menuIconClicked
     ])
     const showWindow = (value, clicked) => {
         // setChromeWindowVisibility(value)
@@ -71,7 +77,8 @@ const DesktopComponent = () => {
                 type: "UPDATE_DESKTOP_ACTION",
                 settingsIconClicked: clicked === "settings" ? value : settingsIconClicked,
                 resumeIconClicked: clicked === "resume" ? value : resumeIconClicked,
-                resumePdfIconClicked: clicked === "resume (PDF)" ? value : resumePdfIconClicked
+                resumePdfIconClicked: clicked === "resume (PDF)" ? value : resumePdfIconClicked,
+                menuIconClicked: clicked === "menu" ? value : menuIconClicked
             })
         }
     }
@@ -87,6 +94,12 @@ const DesktopComponent = () => {
                 darkTheme ? "bg-windows-dark" : "bg-windows-light"
             } bg-cover bg-center text-white`}
         >
+            {/* overlay navbar on top of others */}
+            {menuIconClicked && (
+                <div className="absolute top-0 left-0 z-10 h-auto w-[100%]">
+                    <Navbar></Navbar>
+                </div>
+            )}
             <div className="flex w-full justify-between">
                 <div className="fixed  max-h-[99%]  max-w-[99%]">
                     {/* chrome click */}

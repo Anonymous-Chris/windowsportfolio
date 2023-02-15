@@ -5,6 +5,7 @@
 @import "./assets/styles/sidebar.css";
 @import "./assets/styles/slider.css";
 @import "./assets/styles/scrollbar.css";
+@import "./assets/styles/navbar.css";
 /* carousel for mobile screens */
 .carouselNavigator {
     @apply h-2 w-2  border-none !important;

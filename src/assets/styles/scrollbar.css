@@ -3,7 +3,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    @apply bg-orange-100 rounded;
+    @apply bg-transparent rounded;
 }
 
 ::-webkit-scrollbar-thumb {

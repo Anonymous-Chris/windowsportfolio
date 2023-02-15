@@ -9,6 +9,7 @@ export const initialState = {
     upArrowIconClicked: false,
     resumeIconClicked: false,
     resumePdfIconClicked: false,
+    menuIconClicked: false
 }
 
 const reducer = (state, action) => {
@@ -18,7 +19,7 @@ const reducer = (state, action) => {
             localStorage.setItem("darkTheme", action.darkTheme)
             return {
                 ...state,
-                darkTheme: action.darkTheme,
+                darkTheme: action.darkTheme
             }
         case "UPDATE_TASKBAR_ACTION":
             // console.log(action)
@@ -28,7 +29,7 @@ const reducer = (state, action) => {
                 chromeIconClicked: action.chromeIconClicked,
                 microsoftedgeClicked: action.microsoftedgeClicked,
                 fileIconClicked: action.fileIconClicked,
-                upArrowIconClicked: action.upArrowIconClicked,
+                upArrowIconClicked: action.upArrowIconClicked
             }
         case "UPDATE_DESKTOP_ACTION":
             // console.log(action)
@@ -37,6 +38,7 @@ const reducer = (state, action) => {
                 settingsIconClicked: action.settingsIconClicked,
                 resumeIconClicked: action.resumeIconClicked,
                 resumePdfIconClicked: action.resumePdfIconClicked,
+                menuIconClicked: action.menuIconClicked
             }
         default:
             return state
