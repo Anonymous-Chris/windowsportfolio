@@ -2,7 +2,6 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom"
 import DesktopComponent from "./components/DesktopComponent"
 import MobileComponent from "./components/MobileComponent"
 import About from "./pages/About"
-import Contact from "./pages/Contact"
 import Error from "./pages/Error"
 import Projects from "./pages/Projects"
 
@@ -14,7 +13,6 @@ function App() {
                     <Routes>
                         <Route path="/" element={<MobileComponent />} />
                         <Route path="about" element={<About />} />
-                        <Route path="contact" element={<Contact />} />
                         <Route path="projects" element={<Projects />} />
                         <Route path="*" element={<Error />} />
                     </Routes>
@@ -25,7 +23,6 @@ function App() {
                     <Routes>
                         <Route path="/" element={<DesktopComponent />} />
                         <Route path="about" element={<About />} />
-                        <Route path="contact" element={<Contact />} />
                         <Route path="projects" element={<Projects />} />
                         <Route path="*" element={<Error />} />
                     </Routes>
