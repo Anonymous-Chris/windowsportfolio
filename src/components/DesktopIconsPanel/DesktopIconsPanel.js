@@ -15,13 +15,17 @@ const DesktopIconsPanel = () => {
         useStateValue()
     const clickedIcon = (clicked) => {
         console.log(clicked)
-        dispatch({
-            type: "UPDATE_DESKTOP_ACTION",
-            settingsIconClicked: clicked === "settings" ? true : settingsIconClicked,
-            resumeIconClicked: clicked === "resume" ? true : resumeIconClicked,
-            resumePdfIconClicked: clicked === "resume (PDF)" ? true : resumePdfIconClicked,
-            menuIconClicked: clicked === "menu" ? !menuIconClicked : menuIconClicked
-        })
+        if (clicked === "project") {
+            window.location.href = "/projects"
+        } else {
+            dispatch({
+                type: "UPDATE_DESKTOP_ACTION",
+                settingsIconClicked: clicked === "settings" ? true : settingsIconClicked,
+                resumeIconClicked: clicked === "resume" ? true : resumeIconClicked,
+                resumePdfIconClicked: clicked === "resume (PDF)" ? true : resumePdfIconClicked,
+                menuIconClicked: clicked === "menu" ? !menuIconClicked : menuIconClicked
+            })
+        }
     }
     return (
         <div className="flex h-full w-full flex-col flex-wrap content-start gap-2">

@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import DesktopComponent from "./components/DesktopComponent"
 import MobileComponent from "./components/MobileComponent"
 import About from "./pages/About"
@@ -11,9 +11,10 @@ function App() {
             <div className="h-full w-full overflow-scroll overflow-x-hidden  bg-[#010C1B] text-white md:hidden">
                 <Router>
                     <Routes>
-                        <Route path="/" element={<MobileComponent />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="projects" element={<Projects />} />
+                        <Route exact path="/" element={<MobileComponent />} />
+                        <Route exact path="/portfolio" element={<MobileComponent />} />
+                        <Route exact path="/about" element={<About />} />
+                        <Route exact path="/projects" element={<Projects />} />
                         <Route path="*" element={<Error />} />
                     </Routes>
                 </Router>
@@ -21,9 +22,10 @@ function App() {
             <div className="hidden h-full w-full overflow-scroll overflow-x-hidden bg-[#010C1B]  text-white md:block">
                 <Router>
                     <Routes>
-                        <Route path="/" element={<DesktopComponent />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="projects" element={<Projects />} />
+                        <Route exact path="/" element={<DesktopComponent />} />
+                        <Route exact path="/portfolio" element={<DesktopComponent />} />
+                        <Route exact path="/about" element={<About />} />
+                        <Route exact path="/projects" element={<Projects />} />
                         <Route path="*" element={<Error />} />
                     </Routes>
                 </Router>
