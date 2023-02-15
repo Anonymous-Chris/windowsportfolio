@@ -4,13 +4,20 @@ import Achievements from "../components/Pages/Achievements"
 import GoHome from "../components/Pages/GoHome"
 import Insights from "../components/Pages/Insights"
 import Interests from "../components/Pages/Interests"
+import SocialMedia from "../components/Pages/SocialMedia"
 const About = () => {
     return (
         <div className="flex flex-col overflow-hidden p-10">
             <div className="flex flex-col sm:flex-col lg:flex-row">
                 <div className="h-full w-full">
-                    <img src={Chris} className="mr-auto h-[50%] w-[50%]" />
-                    <div className="mt-5 h-[50%]">
+                    <div className="flex w-full flex-row">
+                        <img src={Chris} className="mr-auto h-[50%] w-[50%]" alt="profile" />
+                        <div className="w-[50%]">
+                            <SocialMedia></SocialMedia>
+                        </div>
+                    </div>
+
+                    <div className="mt-5 h-[50%] w-full">
                         <Achievements></Achievements>
                     </div>
                 </div>
