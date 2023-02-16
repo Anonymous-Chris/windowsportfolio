@@ -47,7 +47,7 @@ const ResumeComponent = () => {
                     Download
                 </button>
             </div>
-            {type && filePath && <FileViewer fileType={type} filePath={filePath} onError={onError} />}{" "}
+            {type && filePath && <FileViewer fileType={type} filePath={filePath} onError={onError} />}
         </div>
     )
 }

@@ -30,7 +30,7 @@ const DesktopIconsPanel = () => {
     return (
         <div className="flex h-full w-full flex-col flex-wrap content-start gap-2">
             <DesktopIcons source={Menu} altText="menu" clickedIcon={clickedIcon}></DesktopIcons>
-            <DesktopIcons source={UserFolder} altText="kshitij" clickedIcon={clickedIcon}></DesktopIcons>{" "}
+            <DesktopIcons source={UserFolder} altText="kshitij" clickedIcon={clickedIcon}></DesktopIcons>
             <DesktopIcons source={Word} altText="resume" clickedIcon={clickedIcon}></DesktopIcons>
             <DesktopIcons source={Word} altText="resume (PDF)" clickedIcon={clickedIcon}></DesktopIcons>
             <DesktopIcons source={Project} altText="project" clickedIcon={clickedIcon}></DesktopIcons>

@@ -1,5 +1,5 @@
 import React from "react"
-import EachItemList from "./EachItemList"
+import EachItemList from "../Common/EachItemList"
 const Interests = () => {
     return (
         <React.Fragment>

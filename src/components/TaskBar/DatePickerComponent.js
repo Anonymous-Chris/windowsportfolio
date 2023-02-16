@@ -21,7 +21,7 @@ const DatePickerComponent = () => {
                 numberOfMonths={1}
                 horizontalMargin={40}
                 readOnly={true}
-            />{" "}
+            />
         </div>
     )
 }

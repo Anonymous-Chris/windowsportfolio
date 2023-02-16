@@ -1,23 +1,25 @@
 import React from "react"
 import Chris from "../assets/profile/chris/chris.png"
-import Achievements from "../components/Pages/Achievements"
-import GoHome from "../components/Pages/GoHome"
-import Insights from "../components/Pages/Insights"
-import Interests from "../components/Pages/Interests"
-import SocialMedia from "../components/Pages/SocialMedia"
+import Achievements from "../components/Pages/About/Achievements"
+import Insights from "../components/Pages/About/Insights"
+import Interests from "../components/Pages/About/Interests"
+import Skills from "../components/Pages/About/Skills"
+import SocialMedia from "../components/Pages/About/SocialMedia"
+import GoHome from "../components/Pages/Common/GoHome"
 const About = () => {
     return (
         <div className="flex flex-col overflow-hidden p-10">
             <div className="flex flex-col sm:flex-col lg:flex-row">
                 <div className="h-full w-full">
                     <div className="flex w-full flex-row">
-                        <img src={Chris} className="mr-auto h-[50%] w-[50%]" alt="profile" />
-                        <div className="w-[50%]">
+                        <div className="hidden h-[50%] w-[50%]">
+                            <img src={Chris} className="mr-auto h-full w-full" alt="profile" />
+                        </div>
+                        <div className="hidden w-[50%] lg:block">
                             <SocialMedia></SocialMedia>
                         </div>
                     </div>
-
-                    <div className="mt-5 h-[50%] w-full">
+                    <div className="mt-5 hidden h-[50%] w-full lg:block">
                         <Achievements></Achievements>
                     </div>
                 </div>
@@ -28,10 +30,20 @@ const About = () => {
                     <div className="mt-5">
                         <Interests></Interests>
                     </div>
+
+                    <div className="mt-5 h-[50%] w-full  lg:hidden">
+                        <Achievements></Achievements>
+                    </div>
                     <div className="mt-5">
                         <Insights></Insights>
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center">
+                <Skills></Skills>
+            </div>
+            <div className="w-full lg:hidden">
+                <SocialMedia></SocialMedia>
             </div>
             <GoHome></GoHome>
         </div>

@@ -1,6 +1,6 @@
 import React from "react"
-import AboutRadarChart from "../graphs/config/AboutRadarChart"
-import AboutStatChart from "../graphs/config/AboutStatChart"
+import AboutRadarChart from "../../graphs/config/AboutRadarChart"
+import AboutStatChart from "../../graphs/config/AboutStatChart"
 const Insights = () => {
     return (
         <div className="flex flex-col">

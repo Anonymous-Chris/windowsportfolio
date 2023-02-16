@@ -1,5 +1,5 @@
 import React from "react"
-import GoHome from "../components/Pages/GoHome"
+import GoHome from "../components/Pages/Common/GoHome"
 const Error = () => {
     return (
         <div className="flex h-auto w-full flex-col text-center ">

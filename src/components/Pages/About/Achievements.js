@@ -1,5 +1,5 @@
 import React from "react"
-import EachItemList from "./EachItemList"
+import EachItemList from "../Common/EachItemList"
 const Achievements = () => {
     return (
         <React.Fragment>
@@ -7,7 +7,7 @@ const Achievements = () => {
             <EachItemList desc="1"></EachItemList>
             <EachItemList desc="2"></EachItemList>
             <EachItemList desc="3"></EachItemList>
-            <EachItemList desc="4"></EachItemList>{" "}
+            <EachItemList desc="4"></EachItemList>
         </React.Fragment>
     )
 }
