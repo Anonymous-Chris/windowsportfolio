@@ -12,7 +12,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-col lg:flex-row">
                 <div className="h-full w-full">
                     <div className="flex w-full flex-row">
-                        <div className="hidden h-[50%] w-[50%]">
+                        <div className="h-[50%] w-[50%]">
                             <img src={Chris} className="mr-auto h-full w-full" alt="profile" />
                         </div>
                         <div className="hidden w-[50%] lg:block">

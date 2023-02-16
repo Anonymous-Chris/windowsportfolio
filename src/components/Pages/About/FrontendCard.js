@@ -5,14 +5,14 @@ import JavascriptLogo from "../../../assets/skills/javascript-original.svg"
 import ReactLogo from "../../../assets/skills/react-original.svg"
 import ReduxLogo from "../../../assets/skills/redux-original.svg"
 import VueLogo from "../../../assets/skills/vue-original.svg"
-
 import CardItem from "./CardItem"
 import Logo from "./Logo"
+
 const FrontendCard = () => {
     return (
-        <div className="m-1 flex w-full flex-col justify-start bg-gray-600 p-3 text-left">
+        <div className="m-1 flex w-full flex-col justify-start bg-gray-600 bg-opacity-50 p-3 text-left">
             <h1 className="text-3xl font-bold text-green-400 ">Frontend</h1>
-            <div className="flex">
+            <div className="flex flex-wrap">
                 <Logo name="Javascript" logo={JavascriptLogo}></Logo>
                 <Logo name="React" logo={ReactLogo}></Logo>
                 <Logo name="Redux" logo={ReduxLogo}></Logo>

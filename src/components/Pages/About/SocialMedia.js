@@ -14,8 +14,9 @@ const SocialMedia = () => {
     }
     return (
         <div className="ml-4 flex h-full w-full flex-col justify-end">
-            <h1 className="m-auto text-center text-2xl">Social Media</h1>
-            <div className="m-auto flex flex-row">
+            <h1 className="m-auto text-center text-2xl lg:m-0 lg:text-left
+            ">Social Media</h1>
+            <div className="m-auto flex flex-row lg:m-0">
                 <BsLinkedin
                     className="ml-2 cursor-pointer text-4xl"
                     onClick={() => routeSocialMedia("linkedin")}

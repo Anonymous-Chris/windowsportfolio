@@ -23,3 +23,7 @@
     @apply w-full;
 }
 
+/* card icon in about page(Logo.js component) */
+.cardIcon:hover{
+    filter: brightness(1.5);
+}

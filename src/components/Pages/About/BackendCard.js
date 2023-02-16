@@ -9,9 +9,9 @@ import Logo from "./Logo"
 
 const BackendCard = () => {
     return (
-        <div className="m-1 flex w-full flex-col justify-start bg-gray-600 p-3 text-left">
+        <div className="bg-opacity-50 bg-gray-600 m-1 flex w-full flex-col justify-start  p-3 text-left">
             <h1 className="text-3xl font-bold text-green-400 ">Backend</h1>
-            <div className="flex">
+            <div className="flex flex-wrap">
                 <Logo name="Express" logo={ExpressLogo}></Logo>
                 <Logo name="Linux" logo={LinuxLogo}></Logo>
                 <Logo name="Mongodb" logo={MongodbLogo}></Logo>
