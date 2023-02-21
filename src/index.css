@@ -6,6 +6,7 @@
 @import "./assets/styles/slider.css";
 @import "./assets/styles/scrollbar.css";
 @import "./assets/styles/navbar.css";
+@import "./assets/styles/verticalScroll.css";
 /* carousel for mobile screens */
 .carouselNavigator {
     @apply h-2 w-2  border-none !important;

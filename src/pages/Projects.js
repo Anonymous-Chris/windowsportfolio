@@ -1,10 +1,13 @@
 import React from "react"
-import GoHome from "../components/Pages/Common/GoHome"
+import EachProject from "../components/Pages/Projects/EachProject"
 
 const Projects = () => {
     return (
-        <div>
-            Projects <GoHome></GoHome>
+        <div className="projectMandatory relative h-screen w-screen overflow-scroll overflow-x-hidden">
+            {/* send lastitem props to the last component */}
+            <EachProject component="a"></EachProject>
+            <EachProject component="b"></EachProject>
+            <EachProject component="c" lastItem={true}></EachProject>
         </div>
     )
 }

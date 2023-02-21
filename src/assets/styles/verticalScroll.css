@@ -1,0 +1,13 @@
+
+.projectElement {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+.projectMandatory {
+  scroll-snap-type: y mandatory;
+}
+
+.projectSnapStop {
+  scroll-snap-stop: always;
+}
