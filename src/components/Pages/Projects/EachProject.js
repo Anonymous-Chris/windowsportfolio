@@ -2,6 +2,8 @@ import React from "react"
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai"
 import { BsFillMouseFill } from "react-icons/bs"
 import GoHome from "../../../components/Pages/Common/GoHome"
+import GithubButton from "./Buttons/GithubButton"
+import LiveButton from "./Buttons/LiveButton"
 const EachProject = (props) => {
     return (
         <div className="projectElement projectSnapStop h-full w-full text-center">
@@ -14,6 +16,8 @@ const EachProject = (props) => {
                 {props.lastItem && <AiOutlineArrowUp className="ml-1 h-[18px] w-[18px]"></AiOutlineArrowUp>}
             </div>
             <GoHome></GoHome>
+            <LiveButton></LiveButton>
+            <GithubButton></GithubButton>
         </div>
     )
 }
