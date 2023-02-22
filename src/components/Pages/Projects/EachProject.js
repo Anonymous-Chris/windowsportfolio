@@ -2,22 +2,27 @@ import React from "react"
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai"
 import { BsFillMouseFill } from "react-icons/bs"
 import GoHome from "../../../components/Pages/Common/GoHome"
-import GithubButton from "./Buttons/GithubButton"
-import LiveButton from "./Buttons/LiveButton"
-const EachProject = (props) => {
+import ProjectDescription from "./ProjectDescription"
+import ProjectImages from "./ProjectImages"
+const EachProject = ({ lastItem, laptopImage, mobileImage, stackTextDesc }) => {
     return (
         <div className="projectElement projectSnapStop h-full w-full text-center">
-            <div>{props.component}</div>
+            <div className="flex h-[85%] w-full flex-col lg:flex-row">
+                <ProjectImages
+                    laptopImage={laptopImage}
+                    mobileImage={mobileImage}
+                    stackTextDesc={stackTextDesc}
+                ></ProjectImages>
+                <ProjectDescription stackTextDesc={stackTextDesc}></ProjectDescription>
+            </div>
             <div className="m-auto mt-5 flex items-center justify-center">
                 <BsFillMouseFill className="mr-1 h-[30px] w-[30px]"></BsFillMouseFill>
-                {!props.lastItem && <span>Scroll down</span>}
-                {props.lastItem && <span>Scroll up</span>}
-                {!props.lastItem && <AiOutlineArrowDown className="ml-1 h-[18px] w-[18px]"></AiOutlineArrowDown>}
-                {props.lastItem && <AiOutlineArrowUp className="ml-1 h-[18px] w-[18px]"></AiOutlineArrowUp>}
+                {!lastItem && <span>Scroll down</span>}
+                {lastItem && <span>Scroll up</span>}
+                {!lastItem && <AiOutlineArrowDown className="ml-1 h-[18px] w-[18px]"></AiOutlineArrowDown>}
+                {lastItem && <AiOutlineArrowUp className="ml-1 h-[18px] w-[18px]"></AiOutlineArrowUp>}
             </div>
             <GoHome></GoHome>
-            <LiveButton></LiveButton>
-            <GithubButton></GithubButton>
         </div>
     )
 }

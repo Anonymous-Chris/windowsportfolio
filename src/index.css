@@ -28,3 +28,9 @@
 .cardIcon:hover{
     filter: brightness(1.5);
 }
+
+/* writing text vertically */
+.verticalText{
+    writing-mode: vertical-rl;
+    margin-left: auto;
+}

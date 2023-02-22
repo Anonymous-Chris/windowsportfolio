@@ -3,3 +3,13 @@ steps taken
  npm update --legacy-peer-deps
 
  npm install --legacy-peer-deps
+
+ Links: 
+ To remove the background
+ https://www.remove.bg/upload
+
+To overlay an image
+https://www.fotor.com/photo-editor-app/editor/sticker
+
+Edit Images:
+https://www.photopea.com/
