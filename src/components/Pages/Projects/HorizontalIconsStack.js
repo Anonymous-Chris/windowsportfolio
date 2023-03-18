@@ -44,7 +44,7 @@ const HorizontalIconsStack = ({ stackTextDesc }) => {
         }
     }
     return (
-        <div className="flex justify-center">
+        <div className="mb-2 flex justify-center">
             {stackTextDesc && stackTextDesc.length > 0 && stackTextDesc.map((item) => getIcons(item))}
         </div>
     )

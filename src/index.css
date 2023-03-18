@@ -25,12 +25,19 @@
 }
 
 /* card icon in about page(Logo.js component) */
-.cardIcon:hover{
+.cardIcon:hover {
     filter: brightness(1.5);
 }
 
 /* writing text vertically */
-.verticalText{
+.verticalText {
     writing-mode: vertical-rl;
     margin-left: auto;
+}
+
+/* ellipsis for text */
+.textEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
