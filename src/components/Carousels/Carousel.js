@@ -6,6 +6,7 @@ const Carousel = (props) => {
             <div className="p-5">
                 <div className="h-11 w-11 rounded-md bg-white">
                     {/* <img
+                    draggable="false"
                         className=" h-full w-full p-1"
                         src={Chrome}
                         alt="chrome"

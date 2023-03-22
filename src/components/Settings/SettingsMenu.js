@@ -6,6 +6,7 @@ const SettingsMenu = () => {
             <div className="flex items-center space-x-2">
                 <div className="relative h-16 w-16">
                     <img
+                        draggable="false"
                         className="rounded-full border border-gray-100 shadow-sm"
                         src="https://randomuser.me/api/portraits/men/81.jpg"
                         alt="user"

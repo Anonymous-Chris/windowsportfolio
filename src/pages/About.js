@@ -13,7 +13,7 @@ const About = () => {
                 <div className="h-full w-full">
                     <div className="flex w-full flex-row">
                         <div className="h-[50%] w-[50%]">
-                            <img src={Chris} className="mr-auto h-full w-full" alt="profile" />
+                            <img draggable="false" src={Chris} className="mr-auto h-full w-full" alt="profile" />
                         </div>
                         <div className="hidden w-[50%] lg:block">
                             <SocialMedia></SocialMedia>
