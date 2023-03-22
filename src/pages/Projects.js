@@ -1,6 +1,10 @@
 import React from "react"
-import mobileImage from "../assets/portfolio/project1/iphoe.png"
-import laptopImage from "../assets/portfolio/project1/laptop.png"
+import digitalTwinOverviewDesktop from "../assets/portfolio/digitaltwin/overview_desktop.png"
+import digitalTwinOverviewMobile from "../assets/portfolio/digitaltwin/overview_mobile.png"
+import fiichargerStationDesktop from "../assets/portfolio/fiicharger/station_desktop.png"
+import fiichargerStationMobile from "../assets/portfolio/fiicharger/station_mobile.png"
+import surveillanceDesktop from "../assets/portfolio/surveillance/surveillance_desktop.png"
+import surveillanceMobile from "../assets/portfolio/surveillance/surveillance_mobile.png"
 import EachProject from "../components/Pages/Projects/EachProject"
 const Projects = () => {
     let dashboardStackDesc = ["React", "Context Api", "CSS", "Chart JS"]
@@ -10,21 +14,21 @@ const Projects = () => {
         <div className="projectMandatory relative h-screen w-screen overflow-scroll overflow-x-hidden">
             {/* send lastitem props to the last component */}
             <EachProject
-                component="a"
-                mobileImage={mobileImage}
-                laptopImage={laptopImage}
+                component="digitaltwin"
+                mobileImage={digitalTwinOverviewMobile}
+                laptopImage={digitalTwinOverviewDesktop}
                 stackTextDesc={dashboardStackDesc}
             ></EachProject>
             <EachProject
-                component="b"
-                mobileImage={mobileImage}
-                laptopImage={laptopImage}
+                component="fiicharger"
+                mobileImage={fiichargerStationMobile}
+                laptopImage={fiichargerStationDesktop}
                 stackTextDesc={fiichargerStackDesc}
             ></EachProject>
             <EachProject
-                component="c"
-                mobileImage={mobileImage}
-                laptopImage={laptopImage}
+                component="overall"
+                mobileImage={surveillanceMobile}
+                laptopImage={surveillanceDesktop}
                 stackTextDesc={portfolioStackDesc}
             ></EachProject>
         </div>
