@@ -1,10 +1,9 @@
 import React from 'react'
 
-const ProjectDescriptionDetail = ({ projectDescriptionDetail }) => {
+const ProjectDescriptionDetail = ({ projectDesc }) => {
     return (
-        <div>
-            ProjectDescriptionDetail
-            {projectDescriptionDetail}
+        <div className="mb-3 flex flex-col text-left">
+            {projectDesc.length > 0 && projectDesc.map((item, index) => <li key={index}>{item.desc}</li>)}
         </div>
     )
 }
