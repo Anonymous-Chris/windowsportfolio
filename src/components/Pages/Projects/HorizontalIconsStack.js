@@ -15,7 +15,7 @@ import Logo from "../About/Logo"
 
 const HorizontalIconsStack = ({ stackTextDesc }) => {
     const getIcons = (iconName) => {
-        console.log(iconName)
+        // console.log(iconName)
         let name = iconName.toLowerCase()
         if (name === "javascript") {
             return <Logo name="Javascript" logo={JavascriptLogo} hover={"true"}></Logo>
@@ -45,7 +45,9 @@ const HorizontalIconsStack = ({ stackTextDesc }) => {
     }
     return (
         <div className="mb-2 flex justify-center">
-            {stackTextDesc && stackTextDesc.length > 0 && stackTextDesc.map((item) => getIcons(item))}
+            {stackTextDesc &&
+                stackTextDesc.length > 0 &&
+                stackTextDesc.map((item) => React.Children.toArray(getIcons(item)))}
         </div>
     )
 }

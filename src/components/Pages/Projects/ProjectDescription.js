@@ -2,12 +2,14 @@ import React from "react"
 import GithubButton from "./Buttons/GithubButton"
 import LiveButton from "./Buttons/LiveButton"
 import HorizontalIconsStack from "./HorizontalIconsStack"
-
-const ProjectDescription = ({ stackTextDesc }) => {
+import ProjectDescriptionDetail from "./ProjectDescriptionDetail"
+const ProjectDescription = ({ stackTextDesc, projectDescriptionDetail }) => {
     return (
         <div className="flex w-full flex-col lg:w-[40%]">
             <div className="">
-                description
+                <ProjectDescriptionDetail
+                    projectDescriptionDetail={projectDescriptionDetail}
+                ></ProjectDescriptionDetail>
                 <HorizontalIconsStack stackTextDesc={stackTextDesc}></HorizontalIconsStack>
             </div>
             <div className="flex w-full justify-center">

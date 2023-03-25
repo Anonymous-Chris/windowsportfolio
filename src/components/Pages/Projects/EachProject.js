@@ -4,7 +4,7 @@ import { BsFillMouseFill } from "react-icons/bs"
 import GoHome from "../../../components/Pages/Common/GoHome"
 import ProjectDescription from "./ProjectDescription"
 import ProjectImages from "./ProjectImages"
-const EachProject = ({ lastItem, laptopImage, mobileImage, stackTextDesc }) => {
+const EachProject = ({ lastItem, laptopImage, mobileImage, stackTextDesc, projectDescriptionDetail }) => {
     return (
         <div className="projectElement projectSnapStop h-full w-full text-center">
             <div className="flex h-[85%] w-full flex-col lg:flex-row">
@@ -13,7 +13,10 @@ const EachProject = ({ lastItem, laptopImage, mobileImage, stackTextDesc }) => {
                     mobileImage={mobileImage}
                     stackTextDesc={stackTextDesc}
                 ></ProjectImages>
-                <ProjectDescription stackTextDesc={stackTextDesc}></ProjectDescription>
+                <ProjectDescription
+                    stackTextDesc={stackTextDesc}
+                    projectDescriptionDetail={projectDescriptionDetail}
+                ></ProjectDescription>
             </div>
             <div className="m-auto mt-5 flex items-center justify-center">
                 <BsFillMouseFill className="mr-1 h-[30px] w-[30px]"></BsFillMouseFill>
