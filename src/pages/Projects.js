@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react"
 import EachProject from "../components/Pages/Projects/EachProject"
 import ProjectsData from "../Data/ProjectsData"
 const Projects = () => {
-    let projectData = ProjectsData()
+    //remove all hidden projects
+    let projectData = ProjectsData().filter((item) => item.show)
     const [randomIndexLaptop, setRandomIndexLaptop] = useState([])
     useEffect(() => {
         // create random choosing of images every 30 seconds
@@ -33,10 +34,11 @@ const Projects = () => {
                                 laptopImage={item.laptopImage[randomIndexLaptop[index]] || item.laptopImage[0]}
                                 stackTextDesc={item.stack}
                                 projectDesc={item.projectDesc}
+                                //check last item dynamically
+                                lastItem={index === projectData.length - 1}
                             ></EachProject>
                         )
                 )}
-            yo
         </div>
     )
 }

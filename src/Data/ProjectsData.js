@@ -45,9 +45,9 @@ const ProjectsData = () => {
             laptopImage: [fiichargerStationDesktop, fiichargerReportsnDesktop, fiichargerPdfDesktop],
             mobileImage: [fiichargerStationMobile, fiichargerReportsMobile],
             config: {
-                isLive: false,
+                isLive: true,
                 hasGithub: false,
-                liveUrl: "",
+                liveUrl: "https://management.evucharging.com/",
                 githubUrl: ""
             },
             projectDesc: []
