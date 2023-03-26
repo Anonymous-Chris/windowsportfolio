@@ -25,7 +25,9 @@ const ProjectsData = () => {
             mobileImage: [digitalTwinOverviewMobile, digitalTwinBsiMobile],
             config: {
                 isLive: false,
-                hasGithub: false
+                hasGithub: false,
+                liveUrl: "",
+                githubUrl: ""
             },
             projectDesc: [
                 {
@@ -44,7 +46,9 @@ const ProjectsData = () => {
             mobileImage: [fiichargerStationMobile, fiichargerReportsMobile],
             config: {
                 isLive: false,
-                hasGithub: false
+                hasGithub: false,
+                liveUrl: "",
+                githubUrl: ""
             },
             projectDesc: []
         },
@@ -56,7 +60,9 @@ const ProjectsData = () => {
             mobileImage: [surveillanceMobile, surveillanceHomeMobile, surveillanceVideoMobile],
             config: {
                 isLive: true,
-                hasGithub: true
+                hasGithub: true,
+                liveUrl: "https://anonymous-chris.github.io/overall/#/",
+                githubUrl: "https://github.com/Anonymous-Chris/overall"
             },
             projectDesc: []
         },
@@ -68,7 +74,9 @@ const ProjectsData = () => {
             mobileImage: [],
             config: {
                 isLive: false,
-                hasGithub: false
+                hasGithub: false,
+                liveUrl: "",
+                githubUrl: ""
             },
             projectDesc: []
         }
