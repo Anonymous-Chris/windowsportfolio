@@ -7,7 +7,7 @@ import ProjectImages from "./ProjectImages"
 const EachProject = ({ lastItem, laptopImage, mobileImage, name, config, stackTextDesc, projectDesc }) => {
     return (
         <div className="projectElement projectSnapStop h-full w-full text-center">
-            <div className="flex h-[85%] w-full flex-col lg:flex-row">
+            <div className="flex h-[85%] w-full flex-col overflow-auto lg:flex-row">
                 <ProjectImages
                     laptopImage={laptopImage}
                     mobileImage={mobileImage}
