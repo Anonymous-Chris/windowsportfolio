@@ -3,7 +3,7 @@ import EachProject from "../components/Pages/Projects/EachProject"
 import ProjectsData from "../Data/ProjectsData"
 const Projects = () => {
     //remove all hidden projects
-    let projectData = ProjectsData().filter((item) => item.show == true)
+    let projectData = ProjectsData().filter((item) => item.show)
     const [randomIndexLaptop, setRandomIndexLaptop] = useState([])
     useEffect(() => {
         // create random choosing of images every 30 seconds
