@@ -96,7 +96,7 @@ const WindowComponent = (props) => {
                     )}
 
                     {props.clicked === "settings" && <SettingsComponent></SettingsComponent>}
-                    {props.clicked === "resume" && <ResumeComponent resumeType="word"></ResumeComponent>}
+                    {props.clicked === "resume" && <ResumeComponent resumeType="docx"></ResumeComponent>}
                     {props.clicked === "resume (PDF)" && <ResumeComponent resumeType="pdf"></ResumeComponent>}
                 </div>
             </div>

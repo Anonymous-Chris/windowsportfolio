@@ -1,11 +1,20 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import FileViewer from "react-file-viewer"
 import ResumePDF from "../../assets/resume/a.pdf"
 import ResumeDOC from "../../assets/resume/b.docx"
-const ResumeComponent = () => {
-    const [type, setType] = useState("docx")
+const ResumeComponent = ({ resumeType }) => {
+    const [type, setType] = useState("")
     const [filePath, setFilePath] = useState(null)
 
+    useEffect(() => {
+        setType(resumeType)
+
+        if (resumeType === "docx") {
+            setFilePath(ResumeDOC)
+        } else {
+            setFilePath(ResumePDF)
+        }
+    }, [resumeType])
     const onError = (e) => {
         console.log(e, "error in file-viewer")
     }
