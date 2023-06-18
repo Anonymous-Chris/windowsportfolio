@@ -1,0 +1,3 @@
+open windows+R and run shell:startup
+open new and shortcut and paste the path of the application
+and restart te application
