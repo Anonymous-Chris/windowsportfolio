@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { useStateValue } from "../context-api/StateProvider"
 import Navbar from "../Navigation/Navbar"
+import { useStateValue } from "../context-api/StateProvider"
 import DesktopIconsPanel from "./DesktopIconsPanel/DesktopIconsPanel"
 import SideBar from "./Sidebar/SideBar"
 import TaskBar from "./TaskBar/TaskBar"

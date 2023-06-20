@@ -1,30 +1,20 @@
 import React from "react"
 
-const TaskBarIcons = (props) => {
-    const clickedIcon = () => {
-        props.clickedIcon(props.altText)
+const TaskBarIcons = ({ altText, clickedIcon, source, disabled, url }) => {
+    const _clickedIcon = () => {
+        clickedIcon(altText)
     }
     return (
-        <div className="flex h-full cursor-pointer items-center justify-center align-middle hover:bg-taskbar-hover">
-            {props.altText !== "githubIcon" && (
-                <img
-                    draggable="false"
-                    className="h-8 w-8"
-                    src={props.source}
-                    alt={props.altText}
-                    onClick={clickedIcon}
-                />
-            )}
+        <div
+            className={`flex h-full cursor-pointer items-center justify-center align-middle hover:bg-taskbar-hover ${
+                disabled ? "pointer-events-none opacity-50" : ""
+            }`}
+        >
+            {!url && <img draggable="false" className="h-8 w-8" src={source} alt={altText} onClick={_clickedIcon} />}
             {/* if it is a link */}
-            {props.altText === "githubIcon" && (
-                <a href={`${props.url}`} target="_blank" rel="noopener noreferrer">
-                    <img
-                        draggable="false"
-                        className="h-8 w-8"
-                        src={props.source}
-                        alt={props.altText}
-                        onClick={clickedIcon}
-                    />
+            {url && (
+                <a href={`${url}`} target="_blank" rel="noopener noreferrer">
+                    <img draggable="false" className="h-8 w-8" src={source} alt={altText} onClick={_clickedIcon} />
                 </a>
             )}
         </div>
