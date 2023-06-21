@@ -29,7 +29,6 @@ const ResumeComponent = ({ resumeType }) => {
     }
 
     const download = () => {
-        console.log("download pdf")
         // using Java Script method to get PDF file
         fetch(filePath).then((response) => {
             response.blob().then((blob) => {
@@ -38,7 +37,7 @@ const ResumeComponent = ({ resumeType }) => {
                 // Setting various property values
                 let alink = document.createElement("a")
                 alink.href = fileURL
-                alink.download = `test.${type}`
+                alink.download = `resume.${type}`
                 alink.click()
             })
         })

@@ -5,14 +5,13 @@ const Slider = (props) => {
     const updateValue = (value) => {
         setCurrentValue(value)
         if (value > 8 && value < 98) {
-            props.getBrightNess(`rgba(0,0,0,${1 - value * 0.01})`)
+            props.getBrightNess(value)
         }
     }
     return (
         <>
-            <p> {currentValue}</p>
             <ReactSlider
-                className="customSlider"
+                className="customSlider ml-2 mt-0"
                 trackClassName="customSlider-track"
                 thumbClassName="customSlider-thumb"
                 min={0}

@@ -151,7 +151,7 @@ const DesktopComponent = () => {
                 <div className="left-0 m-10">
                     <DesktopIconsPanel></DesktopIconsPanel>
                 </div>
-                <div className="right-0 w-[20%]">
+                <div className="right-0 w-[18%]">
                     <SideBar show={upArrowIconClicked}></SideBar>
                 </div>
             </div>

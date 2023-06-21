@@ -17,23 +17,23 @@
 
 .customSlider-track.customSlider-track-0 {
     /* color of the track before the thumb */
-    background: blue;
+    background: #80deea;
 }
 
 .customSlider-thumb {
     cursor: pointer;
     /*color for the thumb */
-    background: pink;
+    background: #80deea;
     /* shape of the thumb: circle */
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
     /* remove default outline when selected */
     outline: none;
 }
 
 .customSlider-thumb:hover {
-    box-shadow: 0 0 0 8px pink;
+    box-shadow: 0 0 0 2px #80deea;
 }
 
 .overlay-screen {
