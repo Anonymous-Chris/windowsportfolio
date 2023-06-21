@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import FileViewer from "react-file-viewer"
-import ResumePDF from "../../assets/resume/a.pdf"
-import ResumeDOC from "../../assets/resume/b.docx"
+import ResumeDOC from "../../assets/resume/kshitij_lingthep.docx"
+import ResumePDF from "../../assets/resume/kshitij_lingthep.pdf"
 const ResumeComponent = ({ resumeType }) => {
     const [type, setType] = useState("")
     const [filePath, setFilePath] = useState(null)
@@ -44,16 +44,28 @@ const ResumeComponent = ({ resumeType }) => {
         })
     }
     return (
-        <div className="h-full w-full">
-            <div className="flex">
-                <button className="ml-2" onClick={showDOCX}>
+        <div className={`h-full w-full bg-white ${type === "docx" ? " text-black" : ""}`}>
+            <div className="flex text-black">
+                <button
+                    class="ml-2 mt-2 inline-flex items-center rounded bg-gray-300 py-2 px-4 font-bold text-gray-800 hover:bg-gray-400"
+                    onClick={showDOCX}
+                >
                     DOCX
                 </button>
-                <button className="ml-2" onClick={showPDF}>
+                <button
+                    class="ml-2 mt-2 inline-flex items-center rounded bg-gray-300 py-2 px-4 font-bold text-gray-800 hover:bg-gray-400"
+                    onClick={showPDF}
+                >
                     PDF
                 </button>
-                <button className="ml-2" onClick={download}>
-                    Download
+                <button
+                    class="ml-2 mt-2 inline-flex items-center rounded bg-gray-300 py-2 px-4 font-bold text-gray-800 hover:bg-gray-400"
+                    onClick={download}
+                >
+                    <svg class="mr-2 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+                    </svg>
+                    <span>Download</span>
                 </button>
             </div>
             {type && filePath && <FileViewer fileType={type} filePath={filePath} onError={onError} />}
