@@ -61,6 +61,7 @@ const HorizontalIconsStack = ({ stackTextDesc }) => {
         } else if (name.includes("tailwind")) {
             return <Logo name="Tailwind" logo={TailwindLogo} hover={"true"}></Logo>
         }
+        //add all icons for stack
     }
     return (
         <div className="mb-2 flex justify-center">

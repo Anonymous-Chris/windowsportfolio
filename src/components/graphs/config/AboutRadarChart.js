@@ -8,8 +8,8 @@ const AboutRadarChart = () => {
         radar: {
             indicator: [
                 { name: "Meeting", max: 100 },
-                { name: "Code Review", max: 100 },
                 { name: "Coding", max: 100 },
+                { name: "Code Review", max: 100 },
                 { name: "Documentation", max: 100 },
                 { name: "Design", max: 100 }
             ]
@@ -24,7 +24,7 @@ const AboutRadarChart = () => {
                         name: "Total"
                     },
                     {
-                        value: [100, 70, 80, 85, 65],
+                        value: [100, 80, 70, 85, 65],
                         name: "Performance"
                     }
                 ]

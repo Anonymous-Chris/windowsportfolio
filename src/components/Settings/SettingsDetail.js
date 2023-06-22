@@ -12,13 +12,15 @@ const SettingsDetail = () => {
         })
     }
     return (
-        <div className="flex h-full w-full flex-row justify-between border-2 border-green-500">
-            <div> Dark Theme</div>
-            <div>
-                {darkTheme && <BsToggleOn onClick={changeTheme}></BsToggleOn>}
-                {!darkTheme && (
-                    <BsToggleOff onClick={changeTheme}></BsToggleOff>
-                )}
+        <div className="flex">
+            <div className="flex h-full w-full flex-row justify-between border-1 rounded bg-gray-300 p-2 m-2">
+                <span className="font-bold text-lg">Dark Theme</span>
+                <span className="cursor-pointer">
+                    {darkTheme && <BsToggleOn className="text-[25px]" onClick={changeTheme}></BsToggleOn>}
+                    {!darkTheme && (
+                    <BsToggleOff className="text-[25px]" onClick={changeTheme}></BsToggleOff>
+                    )}
+                </span>
             </div>
         </div>
     )

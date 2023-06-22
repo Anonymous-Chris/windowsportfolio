@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import DesktopComponent from "./components/DesktopComponent"
 import MobileComponent from "./components/MobileComponent"
 import About from "./pages/About"
@@ -8,7 +8,7 @@ import Projects from "./pages/Projects"
 function App() {
     return (
         <div className="App h-screen w-full">
-            <div className="h-full w-full overflow-scroll overflow-x-hidden  bg-[#010C1B] text-white md:hidden">
+            <div className="h-full w-full overflow-x-hidden  bg-[#010C1B] text-white md:hidden">
                 <Router>
                     <Routes>
                         <Route exact path="/" element={<MobileComponent />} />
@@ -19,7 +19,7 @@ function App() {
                     </Routes>
                 </Router>
             </div>
-            <div className="hidden h-full w-full overflow-scroll overflow-x-hidden bg-[#010C1B]  text-white md:block">
+            <div className="hidden h-full w-full overflow-x-hidden bg-[#010C1B]  text-white md:block">
                 <Router>
                     <Routes>
                         <Route exact path="/" element={<DesktopComponent />} />

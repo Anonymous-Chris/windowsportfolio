@@ -1,9 +1,12 @@
 import React from "react"
+import ChartJs from '../../../assets/skills/chartjs-original.svg'
 import CssLogo from "../../../assets/skills/css3-original.svg"
+import Echarts from '../../../assets/skills/echarts-original.svg'
 import HtmlLogo from "../../../assets/skills/html5-original.svg"
 import JavascriptLogo from "../../../assets/skills/javascript-original.svg"
 import ReactLogo from "../../../assets/skills/react-original.svg"
 import ReduxLogo from "../../../assets/skills/redux-original.svg"
+import TailwindCssLogo from "../../../assets/skills/tailwindcss-original.svg"
 import VueLogo from "../../../assets/skills/vue-original.svg"
 import CardItem from "./CardItem"
 import Logo from "./Logo"
@@ -19,6 +22,9 @@ const FrontendCard = () => {
                 <Logo name="Vue" logo={VueLogo}></Logo>
                 <Logo name="HTML" logo={HtmlLogo}></Logo>
                 <Logo name="CSS" logo={CssLogo}></Logo>
+                <Logo name="Tailwind css" logo={TailwindCssLogo}></Logo>
+                <Logo name="Chart JS" logo={ChartJs}></Logo>
+                <Logo name="Echarts" logo={Echarts}></Logo>
             </div>
             <div className="flex flex-col">
                 <CardItem name="Languages" value="Javascript"></CardItem>
