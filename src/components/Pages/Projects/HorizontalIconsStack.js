@@ -4,6 +4,7 @@ import CSharpLogo from "../../../assets/skills/csharp-original.svg"
 import CssLogo from "../../../assets/skills/css3-original.svg"
 import DotNetLogo from "../../../assets/skills/dotnet-original.svg"
 import EChartsLogo from "../../../assets/skills/echarts-original.svg"
+import ElementUiLogo from "../../../assets/skills/elementui-original.svg"
 import ExpressLogo from "../../../assets/skills/express-original.svg"
 import HtmlLogo from "../../../assets/skills/html5-original.svg"
 import JavaLogo from "../../../assets/skills/java-original.svg"
@@ -17,7 +18,6 @@ import ReactLogo from "../../../assets/skills/react-original.svg"
 import ReduxLogo from "../../../assets/skills/redux-original.svg"
 import TailwindLogo from "../../../assets/skills/tailwindcss-original.svg"
 import VueLogo from "../../../assets/skills/vue-original.svg"
-
 import Logo from "../About/Logo"
 
 const HorizontalIconsStack = ({ stackTextDesc }) => {
@@ -48,9 +48,9 @@ const HorizontalIconsStack = ({ stackTextDesc }) => {
             return <Logo name="Next JS" logo={NextJSLogo} hover={"true"}></Logo>
         } else if (name.includes("chart")) {
             return <Logo name="Chart JS" logo={ChartJsLogo} hover={"true"}></Logo>
-        } else if (name.includes("csharp")) {
+        } else if (name.includes("c#")) {
             return <Logo name="C#" logo={CSharpLogo} hover={"true"}></Logo>
-        } else if (name.includes("dotnet")) {
+        } else if (name.includes(".net")) {
             return <Logo name=".NET" logo={DotNetLogo} hover={"true"}></Logo>
         } else if (name.includes("echarts")) {
             return <Logo name="ECharts" logo={EChartsLogo} hover={"true"}></Logo>
@@ -60,6 +60,8 @@ const HorizontalIconsStack = ({ stackTextDesc }) => {
             return <Logo name="Photopea" logo={PhotopeaLogo} hover={"true"}></Logo>
         } else if (name.includes("tailwind")) {
             return <Logo name="Tailwind" logo={TailwindLogo} hover={"true"}></Logo>
+        } else if (name.includes("element")) {
+            return <Logo name="Element UI" logo={ElementUiLogo} hover={"true"}></Logo>
         }
         //add all icons for stack
     }

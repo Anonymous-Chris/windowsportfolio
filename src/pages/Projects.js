@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import EachProject from "../components/Pages/Projects/EachProject"
 import ProjectsData from "../Data/ProjectsData"
+import EachProject from "../components/Pages/Projects/EachProject"
 const Projects = () => {
     //remove all hidden projects
     let projectData = ProjectsData().filter((item) => item.show)
@@ -33,6 +33,7 @@ const Projects = () => {
                                 mobileImage={item.mobileImage[randomIndexLaptop[index]] || item.mobileImage[0]}
                                 laptopImage={item.laptopImage[randomIndexLaptop[index]] || item.laptopImage[0]}
                                 stackTextDesc={item.stack}
+                                projectInfo={item.projectInfo}
                                 projectDesc={item.projectDesc}
                                 //check last item dynamically
                                 lastItem={index === projectData.length - 1}
