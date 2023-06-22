@@ -4,7 +4,7 @@ import AboutStatChart from "../../graphs/config/AboutStatChart"
 const Insights = () => {
     return (
         <div className="flex flex-col">
-            <h1 className="text-2xl">Insights</h1>
+            <h1 className="text-3xl">Insights</h1>
             <div className="mt-2 flex flex-col sm:flex-row">
                 <div className="mb-5 w-full">
                     <AboutRadarChart></AboutRadarChart>

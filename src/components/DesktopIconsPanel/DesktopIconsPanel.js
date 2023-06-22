@@ -17,6 +17,8 @@ const DesktopIconsPanel = () => {
         console.log(clicked)
         if (clicked === "project") {
             window.location.href = "/projects"
+        } else if (clicked === "kshitij") {
+            window.location.href = "/about"
         } else {
             dispatch({
                 type: "UPDATE_DESKTOP_ACTION",
@@ -31,7 +33,7 @@ const DesktopIconsPanel = () => {
         <div className="flex h-full w-full flex-col flex-wrap content-start gap-2">
             <DesktopIcons disabled={false} source={Menu} altText="menu" clickedIcon={clickedIcon}></DesktopIcons>
             <DesktopIcons
-                disabled={true}
+                disabled={false}
                 source={UserFolder}
                 altText="kshitij"
                 clickedIcon={clickedIcon}
