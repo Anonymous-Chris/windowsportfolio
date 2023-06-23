@@ -1,10 +1,9 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import { HashRouter as Router, Route, Routes } from "react-router-dom"
 import DesktopComponent from "./components/DesktopComponent"
 import MobileComponent from "./components/MobileComponent"
 import About from "./pages/About"
 import Error from "./pages/Error"
 import Projects from "./pages/Projects"
-
 function App() {
     return (
         <div className="App h-screen w-full">

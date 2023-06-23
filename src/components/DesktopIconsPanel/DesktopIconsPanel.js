@@ -10,15 +10,19 @@ import UserFolder from "../../assets/icons/user-folder.png"
 import Word from "../../assets/icons/word.png"
 import { useStateValue } from "../../context-api/StateProvider"
 import DesktopIcons from "./DesktopIcons"
+import { useNavigate } from "react-router-dom"
+
 const DesktopIconsPanel = () => {
     const [{ menuIconClicked, settingsIconClicked, resumeIconClicked, resumePdfIconClicked }, dispatch] =
         useStateValue()
+        const navigate = useNavigate()
+
     const clickedIcon = (clicked) => {
         console.log(clicked)
         if (clicked === "project") {
-            window.location.href = "/projects"
+            navigate("/projects")
         } else if (clicked === "kshitij") {
-            window.location.href = "/about"
+            navigate("/about")
         } else {
             dispatch({
                 type: "UPDATE_DESKTOP_ACTION",

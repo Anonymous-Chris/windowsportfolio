@@ -1,5 +1,6 @@
 steps taken
-
+ npm i --force
+ 
  npm update --legacy-peer-deps
 
  npm install --legacy-peer-deps
