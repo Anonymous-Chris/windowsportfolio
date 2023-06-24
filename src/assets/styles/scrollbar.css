@@ -1,7 +1,6 @@
 ::-webkit-scrollbar {
-    @apply w-3 h-3;
+    @apply w-[8px] h-[8px];
 }
-
 ::-webkit-scrollbar-track {
     @apply bg-transparent rounded;
 }

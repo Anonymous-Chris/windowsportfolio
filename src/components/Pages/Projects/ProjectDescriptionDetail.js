@@ -2,7 +2,7 @@ import React from "react"
 
 const ProjectDescriptionDetail = ({ projectInfo, projectDesc }) => {
     return (
-        <div className="mb-4 flex flex-col text-left text-lg">
+        <div className="mb-4 flex flex-col text-left text-base">
             {projectInfo.length > 0 &&
                 projectInfo.map((item, index) => (
                     <li className="mb-2 list-none" key={index}>

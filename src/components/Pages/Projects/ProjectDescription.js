@@ -14,7 +14,7 @@ const ProjectDescription = ({ stackTextDesc, projectInfo, projectDesc, name, con
                     projectDesc={projectDesc}
                 ></ProjectDescriptionDetail>
             </div>
-            <div className="flex w-full justify-center text-2xl">
+            <div className="flex w-full justify-center text-2xl relative">
                 <LiveButton disabled={!config.isLive} url={config.liveUrl}></LiveButton>
                 <GithubButton disabled={!config.hasGithub} url={config.githubUrl}></GithubButton>
             </div>
