@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/windowsportfolio/static/css/main.715338be.css",
-    "main.js": "/windowsportfolio/static/js/main.bd08ee16.js",
+    "main.js": "/windowsportfolio/static/js/main.85863e45.js",
     "static/js/241.f5f862da.chunk.js": "/windowsportfolio/static/js/241.f5f862da.chunk.js",
     "static/js/407.8715c071.chunk.js": "/windowsportfolio/static/js/407.8715c071.chunk.js",
     "static/js/988.f2a62fdd.chunk.js": "/windowsportfolio/static/js/988.f2a62fdd.chunk.js",
@@ -53,13 +53,13 @@
     "static/media/vue-original.svg": "/windowsportfolio/static/media/vue-original.9f537ef871539b63299dea9ec24182f4.svg",
     "static/media/nextjs-original.svg": "/windowsportfolio/static/media/nextjs-original.17fe1720dcc66b60fc1a5a70d104d1dd.svg",
     "main.715338be.css.map": "/windowsportfolio/static/css/main.715338be.css.map",
-    "main.bd08ee16.js.map": "/windowsportfolio/static/js/main.bd08ee16.js.map",
+    "main.85863e45.js.map": "/windowsportfolio/static/js/main.85863e45.js.map",
     "241.f5f862da.chunk.js.map": "/windowsportfolio/static/js/241.f5f862da.chunk.js.map",
     "407.8715c071.chunk.js.map": "/windowsportfolio/static/js/407.8715c071.chunk.js.map",
     "988.f2a62fdd.chunk.js.map": "/windowsportfolio/static/js/988.f2a62fdd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.715338be.css",
-    "static/js/main.bd08ee16.js"
+    "static/js/main.85863e45.js"
   ]
 }
