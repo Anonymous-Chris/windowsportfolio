@@ -11,7 +11,7 @@ const Slider = (props) => {
     return (
         <>
             <ReactSlider
-                className="customSlider ml-2 mt-0"
+                className="customSlider ml-2 mt-0 cursor-pointer"
                 trackClassName="customSlider-track"
                 thumbClassName="customSlider-thumb"
                 min={0}

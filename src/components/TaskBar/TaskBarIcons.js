@@ -6,8 +6,8 @@ const TaskBarIcons = ({ altText, clickedIcon, source, disabled, url }) => {
     }
     return (
         <div
-            className={`flex h-full cursor-pointer items-center justify-center align-middle hover:bg-taskbar-hover ${
-                disabled ? "pointer-events-none opacity-50" : ""
+            className={`flex h-full  items-center justify-center align-middle hover:bg-taskbar-hover ${
+                disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"
             }`}
         >
             {!url && <img draggable="false" className="h-8 w-8" src={source} alt={altText} onClick={_clickedIcon} />}

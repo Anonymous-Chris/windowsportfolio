@@ -6,8 +6,8 @@ import ProjectDescription from "./ProjectDescription"
 import ProjectImages from "./ProjectImages"
 const EachProject = ({ lastItem, laptopImage, mobileImage, name, config, stackTextDesc, projectDesc, projectInfo }) => {
     return (
-        <div className="projectElement projectSnapStop h-full w-full text-center pr-1">
-            <div className="flex h-[85%] w-full flex-col overflow-auto lg:flex-row p-1">
+        <div className="projectElement projectSnapStop h-full w-full pr-1 text-center">
+            <div className="flex h-[85%] w-full flex-col overflow-auto overflow-hidden p-1 lg:flex-row">
                 <ProjectImages
                     laptopImage={laptopImage}
                     mobileImage={mobileImage}

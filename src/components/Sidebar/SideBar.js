@@ -40,37 +40,37 @@ const SideBar = (props) => {
                         <div className="ml-auto mr-auto mb-2 flex w-[100%] flex-col">
                             {/* first row */}
                             <div className="ml-[5%] mr-[5%] mb-3 flex h-[32px] w-[100%] flex-row">
-                                <div className="mr-[7%] flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="mr-[7%]  flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <BsWifi></BsWifi>
                                 </div>
-                                <div className="mr-[7%] flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="mr-[7%] flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <FiBluetooth></FiBluetooth>
                                 </div>
-                                <div className="flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <MdOutlineAirplanemodeActive></MdOutlineAirplanemodeActive>
                                 </div>
                             </div>
                             {/* second row */}
                             <div className="ml-[5%] mb-3 mr-[5%] flex h-[32px] w-[100%] flex-row">
-                                <div className="mr-[7%] flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="mr-[7%] flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <BsBatteryCharging></BsBatteryCharging>
                                 </div>
-                                <div className="mr-[7%] flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="mr-[7%] flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <BsMoonFill></BsMoonFill>
                                 </div>
-                                <div className="flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <ImAccessibility></ImAccessibility>
                                 </div>
                             </div>
                             {/* third row */}
                             <div className="ml-[5%] mb-3 mr-[5%] flex h-[32px] w-[100%] flex-row">
-                                <div className="mr-[7%] flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="mr-[7%] flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <BiCurrentLocation></BiCurrentLocation>
                                 </div>
-                                <div className="mr-[7%] flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="mr-[7%] flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <MdOutlineSecurity></MdOutlineSecurity>
                                 </div>
-                                <div className="flex w-[25%] items-center justify-center rounded bg-slate-500">
+                                <div className="flex w-[25%] cursor-not-allowed items-center justify-center rounded bg-slate-500">
                                     <MdScreenShare></MdScreenShare>
                                 </div>
                             </div>
@@ -86,8 +86,8 @@ const SideBar = (props) => {
                     </div>
                 </div>
                 <div className="ml-7 mr-5 mt-2 mb-4 flex justify-between">
-                    <BsBatteryHalf></BsBatteryHalf>
-                    <FiSettings></FiSettings>
+                    <BsBatteryHalf className="cursor-not-allowed"></BsBatteryHalf>
+                    <FiSettings className="cursor-not-allowed"></FiSettings>
                 </div>
             </div>
             {/* overlay of brightness */}
