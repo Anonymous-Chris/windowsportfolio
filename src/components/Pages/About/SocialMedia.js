@@ -7,7 +7,7 @@ const SocialMedia = () => {
         } else if (socialMedia === "github") {
             window.open("https://github.com/Anonymous-Chris", "_blank")
         } else if (socialMedia === "facebook") {
-            window.open("https://www.facebook.com/skniyara/", "_blank")
+            window.open("https://www.facebook.com/", "_blank")
         } else if (socialMedia === "twitter") {
             window.open("https://twitter.com/limbe_me", "_blank")
         }
