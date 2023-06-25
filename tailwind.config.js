@@ -7,6 +7,7 @@ module.exports = {
                 'windows-dark': "url('/src/assets/wallpaper/default_dark.jpg')",
                 'windows-light':"url('/src/assets/wallpaper/default_light.jpg')",
                 'aeroplane': "url('https://calaero.edu/wp-content/uploads/2019/02/Runway-Distance-Requirements.jpg')",
+                "windowsmobile":"url('/src/assets/icons/windowsmobile.jpg')",
                 'notFound': "url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif')",
             }, colors: {
                 'taskbar': ' rgba(3, 21, 41, 0.4)',

@@ -4,7 +4,7 @@ const MobileComponent = () => {
     let carousels = [
         <Carousel name={1} />,
         <Carousel name={2} />,
-        <Carousel name={3} />,
+        // <Carousel name={3} />,
     ]
     const inputRef = useRef(null)
 
@@ -14,7 +14,7 @@ const MobileComponent = () => {
         inputRef.current.click()
     }, [])
     return (
-        <div className="z-0 h-full w-full bg-aeroplane bg-cover bg-center">
+        <div className="z-0 h-full w-full bg-windowsmobile bg-cover bg-center">
             <div
                 id="carouselExampleCaptions"
                 className="slide carousel h-full"
