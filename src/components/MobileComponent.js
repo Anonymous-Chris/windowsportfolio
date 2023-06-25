@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react"
 import Carousel from "./Carousels/Carousel"
 const MobileComponent = () => {
     let carousels = [
-        <Carousel name={1} />,
-        <Carousel name={2} />,
-        // <Carousel name={3} />,
+        <Carousel name={'first'} />,
+        <Carousel name={'second'} />,
+        // <Carousel name={'third'} />,
     ]
     const inputRef = useRef(null)
 

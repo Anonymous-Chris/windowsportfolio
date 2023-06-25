@@ -27,7 +27,7 @@ const SettingsMenu = () => {
                         <span className="text-orange-500">
                             <BsBrush></BsBrush>
                         </span>
-                        <span className="ml-2">Personalization</span>
+                        <span className="ml-2 textEllipsis">Personalization</span>
                     </li>
                     {/* add more lists of settings */}
                 </ul>
