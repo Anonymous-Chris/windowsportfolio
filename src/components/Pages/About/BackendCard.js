@@ -26,7 +26,7 @@ const BackendCard = () => {
             <div className="flex flex-col">
                 <CardItem name="Languages" value="Javascript, Java"></CardItem>
                 <CardItem name="Frameworks" value="Express, SpringBoot, .NET Core"></CardItem>
-                <CardItem name="Databases" value="MySQL & Mongo"></CardItem>
+                <CardItem name="Databases" value="SQL, MySQL, Mongo"></CardItem>
                 <CardItem name="API" value="REST"></CardItem>
                 <CardItem name="Deployment" value="Github, Gitlab, Docker ..."></CardItem>
             </div>
