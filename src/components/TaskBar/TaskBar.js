@@ -14,7 +14,7 @@ import Weather from "./Weather"
 import Wifi from "./Wifi"
 const TaskBar = () => {
     const [
-        { windowsIconClicked, chromeIconClicked, microsoftedgeClicked, fileIconClicked, upArrowIconClicked },
+        { windowsIconClicked, chromeIconClicked, microsoftedgeClicked, fileIconClicked, upArrowIconClicked, brightness },
         dispatch
     ] = useStateValue()
 
@@ -66,6 +66,7 @@ const TaskBar = () => {
             <div
                 className="z-10 flex w-[30%] items-center justify-end gap-2 bg-taskbar
                 text-center align-middle text-xl"
+                style={{opacity: brightness/100}}
             >
                 <UpArrow altText="upArrowIcon" clickedIcon={clickedIcon} show={upArrowIconClicked}></UpArrow>
                 <Weather></Weather>

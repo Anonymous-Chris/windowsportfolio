@@ -1,11 +1,19 @@
 import React, { useState } from "react"
 import ReactSlider from "react-slider"
+import { useStateValue } from "../../context-api/StateProvider"
+
 const Slider = (props) => {
+    const [, dispatch] = useStateValue()
+
     const [currentValue, setCurrentValue] = useState(99)
     const updateValue = (value) => {
         setCurrentValue(value)
         if (value > 8 && value < 98) {
             props.getBrightNess(value)
+            dispatch({
+                type: "UPDATE_BRIGHTNESS",
+                brightness: value
+            })
         }
     }
     return (

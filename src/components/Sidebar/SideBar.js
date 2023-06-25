@@ -29,7 +29,8 @@ const SideBar = (props) => {
             <div
                 className={`slide-in-content float-right mt-[1vh] flex h-[95%] w-[100%] flex-col`}
                 style={{
-                    background: `rgba(51,65,85,${sliderValue / 100})`
+                    background: `rgba(51,65,85,${sliderValue / 100})`,
+                    opacity: sliderValue / 100
                 }}
             >
                 <div className="mb-auto flex h-[100%] items-center justify-center text-center">

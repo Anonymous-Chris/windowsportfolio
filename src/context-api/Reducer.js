@@ -9,7 +9,8 @@ export const initialState = {
     upArrowIconClicked: false,
     resumeIconClicked: false,
     resumePdfIconClicked: false,
-    menuIconClicked: false
+    menuIconClicked: false,
+    brightness: 100
 }
 
 const reducer = (state, action) => {
@@ -39,6 +40,11 @@ const reducer = (state, action) => {
                 resumeIconClicked: action.resumeIconClicked,
                 resumePdfIconClicked: action.resumePdfIconClicked,
                 menuIconClicked: action.menuIconClicked
+            }
+        case "UPDATE_BRIGHTNESS":
+            return {
+                ...state,
+                brightness: action.brightness
             }
         default:
             return state
