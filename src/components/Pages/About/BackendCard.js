@@ -11,7 +11,7 @@ import CardItem from "./CardItem"
 import Logo from "./Logo"
 const BackendCard = () => {
     return (
-        <div className="m-1 flex w-full flex-col justify-start bg-gray-600 bg-opacity-50  p-3 text-left">
+        <div className="m-1 flex w-full flex-col justify-start rounded bg-gray-600  bg-opacity-50 p-3 text-left">
             <h1 className="text-3xl font-bold text-green-400 ">Backend</h1>
             <div className="flex flex-wrap">
                 <Logo name="Express" logo={ExpressLogo}></Logo>

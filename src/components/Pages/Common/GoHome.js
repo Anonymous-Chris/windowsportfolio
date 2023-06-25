@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom"
 const GoHome = () => {
     return (
         <div className="mt-5 text-center">
-            <NavLink to={"/"}>Go to Home</NavLink>
+            <NavLink className="rounded bg-gray-600 p-2" to={"/"}>
+                Go to Home
+            </NavLink>
         </div>
     )
 }

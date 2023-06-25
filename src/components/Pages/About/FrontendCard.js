@@ -13,7 +13,7 @@ import Logo from "./Logo"
 
 const FrontendCard = () => {
     return (
-        <div className="m-1 flex w-full flex-col justify-start bg-gray-600 bg-opacity-50 p-3 text-left">
+        <div className="m-1 flex w-full flex-col justify-start bg-gray-600 bg-opacity-50 p-3 text-left rounded">
             <h1 className="text-3xl font-bold text-green-400 ">Frontend</h1>
             <div className="flex flex-wrap">
                 <Logo name="Javascript" logo={JavascriptLogo}></Logo>
