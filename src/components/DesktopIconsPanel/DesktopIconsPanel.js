@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 import Acknowledgment from "../../assets/icons/acknowledgment.png"
 import Comments from "../../assets/icons/comments.png"
 import Menu from "../../assets/icons/menu.png"
@@ -10,7 +11,6 @@ import UserFolder from "../../assets/icons/user-folder.png"
 import Word from "../../assets/icons/word.png"
 import { useStateValue } from "../../context-api/StateProvider"
 import DesktopIcons from "./DesktopIcons"
-import { useNavigate } from "react-router-dom"
 
 const DesktopIconsPanel = () => {
     const [{ menuIconClicked, settingsIconClicked, resumeIconClicked, resumePdfIconClicked }, dispatch] =
@@ -35,7 +35,7 @@ const DesktopIconsPanel = () => {
     }
     return (
         <div className="flex h-full w-full flex-col flex-wrap content-start gap-2">
-            <DesktopIcons disabled={false} source={Menu} altText="menu" clickedIcon={clickedIcon}></DesktopIcons>
+            {process.env.NODE_ENV === "development" && <DesktopIcons disabled={false} source={Menu} altText="menu" clickedIcon={clickedIcon}></DesktopIcons>}
             <DesktopIcons
                 disabled={false}
                 source={UserFolder}
