@@ -14,8 +14,8 @@ import surveillancePhotoDesktop from "../assets/portfolio/surveillance/photo_des
 import surveillanceDesktop from "../assets/portfolio/surveillance/surveillance_desktop.png"
 import surveillanceMobile from "../assets/portfolio/surveillance/surveillance_mobile.png"
 import surveillanceVideoMobile from "../assets/portfolio/surveillance/video_mobile.png"
-import windowsMobile from '../assets/portfolio/windows/portfolio_mobile.png'
 import windowsDesktop from '../assets/portfolio/windows/portfolio_desktop.png'
+import windowsMobile from '../assets/portfolio/windows/portfolio_mobile.png'
 const ProjectsData = () => {
     let data = [
         {
@@ -91,7 +91,7 @@ const ProjectsData = () => {
             config: {
                 isLive: true,
                 hasGithub: true,
-                liveUrl: "https://anonymous-chris.github.io/overall/#/",
+                liveUrl: "https://anonymous-chris.github.io/overall/#/surveillance",
                 githubUrl: "https://github.com/Anonymous-Chris/overall"
             },
             projectInfo: [
