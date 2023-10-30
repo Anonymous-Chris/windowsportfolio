@@ -3,7 +3,7 @@ import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs"
 const SocialMedia = () => {
     const routeSocialMedia = (socialMedia) => {
         if (socialMedia === "linkedin") {
-            window.open("https://www.linkedin.com/in/kshitij-lingthep", "_blank")
+            window.open("https://www.linkedin.com/in/chris-limbu/", "_blank")
         } else if (socialMedia === "github") {
             window.open("https://github.com/Anonymous-Chris", "_blank")
         } else if (socialMedia === "facebook") {
