@@ -1,5 +1,5 @@
-import React from "react"
 import BackendCard from "./BackendCard"
+import CloudCard from "./CloudCard"
 import FrontendCard from "./FrontendCard"
 
 const Skills = () => {
@@ -10,6 +10,9 @@ const Skills = () => {
             <div className="flex flex-col justify-evenly sm:flex-row">
                 <FrontendCard></FrontendCard>
                 <BackendCard></BackendCard>
+            </div>
+            <div className="flex flex-col justify-evenly sm:flex-row">
+                <CloudCard></CloudCard>
             </div>
         </div>
     )

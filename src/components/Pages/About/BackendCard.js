@@ -1,4 +1,3 @@
-import React from 'react'
 import CSharpLogo from "../../../assets/skills/csharp-original.svg"
 import DotNetLogo from '../../../assets/skills/dotnet-original.svg'
 import ExpressLogo from "../../../assets/skills/express-original.svg"
@@ -24,11 +23,10 @@ const BackendCard = () => {
                 <Logo name="Java" logo={JavaLogo}></Logo>
             </div>
             <div className="flex flex-col">
-                <CardItem name="Languages" value="Javascript, Java"></CardItem>
+                <CardItem name="Languages" value="Javascript, Java"></CardItem> 
                 <CardItem name="Frameworks" value="Express, SpringBoot, .NET Core"></CardItem>
-                <CardItem name="Databases" value="SQL, MySQL, Mongo"></CardItem>
-                <CardItem name="API" value="REST"></CardItem>
-                <CardItem name="Deployment" value="Github, Gitlab, Docker ..."></CardItem>
+                <CardItem name="Databases" value="SQL, MySQL, Oracle, Mongo"></CardItem>
+                <CardItem name="API" value="REST & GraphQL"></CardItem>
             </div>
         </div>
     )
