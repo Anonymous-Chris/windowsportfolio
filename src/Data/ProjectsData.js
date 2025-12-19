@@ -1,3 +1,10 @@
+import andonHomeDesktop from '../assets/portfolio/andon/home_desktop.png'
+import andonHomeMobile from '../assets/portfolio/andon/home_mobile.png'
+import andonModuleDesktop from '../assets/portfolio/andon/module_desktop.png'
+import andonPackingDesktop from '../assets/portfolio/andon/packing_desktop.png'
+import andonPackingMobile from '../assets/portfolio/andon/packing_mobile.png'
+import confidentialDesktop from '../assets/portfolio/confidential/confidential_desktop.png'
+import confidentialMobile from '../assets/portfolio/confidential/confidential_mobile.png'
 import digitalTwinBsiDesktop from "../assets/portfolio/digitaltwin/bsi_desktop.png"
 import digitalTwinBsiMobile from "../assets/portfolio/digitaltwin/bsi_mobile.png"
 import digitalTwinFmcsDesktop from "../assets/portfolio/digitaltwin/fmcs_desktop.png"
@@ -18,6 +25,76 @@ import windowsDesktop from '../assets/portfolio/windows/portfolio_desktop.png'
 import windowsMobile from '../assets/portfolio/windows/portfolio_mobile.png'
 const ProjectsData = () => {
     let data = [
+        {
+            show: true,
+            component: "MES System (Confidential)",
+            stack: ["C#", ".NET", "Oracle DB", "MVC"],
+            laptopImage: [confidentialDesktop],
+            mobileImage: [confidentialMobile],
+            config: {
+                isLive: false,
+                hasGithub: false,
+                liveUrl: "",
+                githubUrl: ""
+            },
+            projectInfo: [
+                {
+                    desc: "A Manufacturing Execution System (MES) is a core manufacturing application that enables real-time monitoring, control, and optimization of shop-floor operations. The MES solution captures production, machine, and quality data to ensure full traceability, improve operational efficiency, and support informed decision-making throughout the manufacturing lifecycle."
+                }
+            ],
+            projectDesc: [
+                {
+                    desc: "Enable real-time tracking and control of manufacturing processes to improve production visibility, traceability, and compliance with quality standards."
+                },
+                {
+                    desc: "Collect and analyze machine and process data to identify inefficiencies, reduce downtime, and enhance overall equipment effectiveness (OEE)."
+                },
+                {
+                    desc: "Develop interactive dashboards and reports using frontend technologies integrated with the MES to visualize key production metrics and performance trends."
+                },
+                {
+                    desc: "Build scalable and secure backend services using C# and .NET to implement business logic, data processing, and seamless integration with databases and external manufacturing systems."
+                }
+            ]
+        },
+        {
+            show: true,
+            component: "Andon Board",
+            stack: ["HTML", "CSS", "JS", "C#", ".NET", "SignalR"],
+            laptopImage: [andonHomeDesktop, andonModuleDesktop, andonPackingDesktop],
+            mobileImage: [andonHomeMobile, andonPackingMobile],
+            config: {
+                isLive: false,
+                hasGithub: false,
+                liveUrl: "",
+                githubUrl: ""
+            },
+            projectInfo: [
+                {
+                    desc: "The Andon Board is a real-time manufacturing monitoring system designed to provide instant visibility into equipment status and production performance across the shop floor. The application enables continuous tracking of machine states, downtime, and process goals while facilitating effective communication between managers and operators. Built using C#, .NET, SignalR, and Oracle, the system ensures low-latency updates and reliable data synchronization across connected devices."
+                }
+            ],
+            projectDesc: [
+                {
+                    desc: "Display live equipment status and continuously monitor all manufacturing equipment to improve operational awareness and response time."
+                },
+                {
+                    desc: "Track and analyze equipment downtime to identify recurring issues, reduce production interruptions, and improve overall efficiency."
+                },
+                {
+                    desc: "Enable manager-to-operator communication through notes and alerts, ensuring timely information sharing and issue resolution."
+                },
+                {
+                    desc: "Define and monitor process-level goals to track performance against targets in real time."
+                },
+                {
+                    desc: "Implement an admin dashboard to manage connected devices, monitor system health, and reset connections when required."
+                },
+                {
+                    desc: "Ensure robust logging and diagnostics using Log4js, with data persistence and reporting supported by Oracle databases."
+                }
+            ]
+        },
         {
             show: true,
             component: "Digital Twin",
