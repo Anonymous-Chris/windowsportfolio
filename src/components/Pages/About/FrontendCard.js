@@ -30,7 +30,7 @@ const FrontendCard = () => {
                 <CardItem name="Languages" value="Javascript"></CardItem>
                 <CardItem name="Frameworks" value="React, Vue"></CardItem>
                 <CardItem name="Testing" value="Jest & Enzyme"></CardItem>
-                <CardItem name="Tools & Libraries" value="Redux, Vuex, Sass ..."></CardItem>
+                <CardItem name="Tools & Libraries" value="Redux, Vuex, Sass, Bootstrap, Axios, Jest, Enzyme"></CardItem>
                 <CardItem name="Core" value="HTML & CSS"></CardItem>
             </div>
         </div>
