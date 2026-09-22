@@ -1,6 +1,7 @@
 import BackendCard from "./BackendCard"
 import CloudCard from "./CloudCard"
 import FrontendCard from "./FrontendCard"
+import MLCard from "./MLCard"
 
 const Skills = () => {
     return (
@@ -12,6 +13,7 @@ const Skills = () => {
                 <BackendCard></BackendCard>
             </div>
             <div className="flex flex-col justify-evenly sm:flex-row">
+                <MLCard></MLCard>
                 <CloudCard></CloudCard>
             </div>
         </div>
