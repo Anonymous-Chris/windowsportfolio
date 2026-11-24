@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/windowsportfolio/static/css/main.7e53b084.css",
-    "main.js": "/windowsportfolio/static/js/main.1be02a80.js",
-    "static/js/241.f5f862da.chunk.js": "/windowsportfolio/static/js/241.f5f862da.chunk.js",
-    "static/js/407.8715c071.chunk.js": "/windowsportfolio/static/js/407.8715c071.chunk.js",
-    "static/js/988.f2a62fdd.chunk.js": "/windowsportfolio/static/js/988.f2a62fdd.chunk.js",
-    "static/media/kshitij_lingthep.docx": "/windowsportfolio/static/media/kshitij_lingthep.662ac85a73232375dc60.docx",
+    "main.css": "/windowsportfolio/static/css/main.1b325ebd.css",
+    "main.js": "/windowsportfolio/static/js/main.625d718e.js",
+    "static/js/905.2ece9859.chunk.js": "/windowsportfolio/static/js/905.2ece9859.chunk.js",
+    "static/js/320.605ea9a1.chunk.js": "/windowsportfolio/static/js/320.605ea9a1.chunk.js",
+    "static/js/453.15e275af.chunk.js": "/windowsportfolio/static/js/453.15e275af.chunk.js",
+    "static/media/kshitij_lingthep.docx": "/windowsportfolio/static/media/kshitij_lingthep.edeb8ed6815b71ae0084.docx",
     "static/media/chris.png": "/windowsportfolio/static/media/chris.f059737ac0b6102b0003.png",
     "static/media/photo_desktop.png": "/windowsportfolio/static/media/photo_desktop.0c529c61975f03ae95a3.png",
     "static/media/home_desktop.png": "/windowsportfolio/static/media/home_desktop.af4f9d0c3019078d924d.png",
@@ -14,8 +14,8 @@
     "static/media/portfolio_desktop.png": "/windowsportfolio/static/media/portfolio_desktop.b90c34697bba0932ce00.png",
     "static/media/default_dark.jpg": "/windowsportfolio/static/media/default_dark.8f0720e6ca71cede621f.jpg",
     "static/media/linux-original.svg": "/windowsportfolio/static/media/linux-original.0cb7bf4e5cb9ed5e2333d50935fad3d4.svg",
+    "static/media/kshitij_lingthep.pdf": "/windowsportfolio/static/media/kshitij_lingthep.9dd11305ca7469d13caf.pdf",
     "static/media/video_mobile.png": "/windowsportfolio/static/media/video_mobile.49612828fcd22b05390d.png",
-    "static/media/kshitij_lingthep.pdf": "/windowsportfolio/static/media/kshitij_lingthep.3c1f4d0b066f1981448c.pdf",
     "static/media/surveillance_desktop.png": "/windowsportfolio/static/media/surveillance_desktop.580815962c09f1ea8961.png",
     "static/media/overview_desktop.png": "/windowsportfolio/static/media/overview_desktop.83a469db2be180ed25a2.png",
     "static/media/fmcs_desktop.png": "/windowsportfolio/static/media/fmcs_desktop.200ba7b61cf983011150.png",
@@ -38,6 +38,7 @@
     "static/media/tailwindcss-original.svg": "/windowsportfolio/static/media/tailwindcss-original.deb8b05e7c6520f4c0ee88f663aaff8b.svg",
     "static/media/chartjs-original.svg": "/windowsportfolio/static/media/chartjs-original.2092e1363421e282c13693dc82c8f2f8.svg",
     "static/media/windowsmobile.jpg": "/windowsportfolio/static/media/windowsmobile.16d4622f61e7ae2ca422.jpg",
+    "static/media/huggingface-original.png": "/windowsportfolio/static/media/huggingface-original.c2ebef849a9418dc5ca4.png",
     "static/media/project.png": "/windowsportfolio/static/media/project.58df7382fcfc7c2e9d09.png",
     "static/media/echarts-original.svg": "/windowsportfolio/static/media/echarts-original.b9d30c09c6f759e1c6cddec87ce8cb2e.svg",
     "static/media/elementui-original.svg": "/windowsportfolio/static/media/elementui-original.4f4ed698c71c1595cbd7adfd1a3e929e.svg",
@@ -51,6 +52,7 @@
     "static/media/microsoft-edge.svg": "/windowsportfolio/static/media/microsoft-edge.56a236c536bc68210b93e5ca64871d8e.svg",
     "static/media/chrome.svg": "/windowsportfolio/static/media/chrome.b3ca871f1941516101f77855ee3e6620.svg",
     "static/media/react-original.svg": "/windowsportfolio/static/media/react-original.4e0c97009b885bfa75c5412262a46f5f.svg",
+    "static/media/python-original.svg": "/windowsportfolio/static/media/python-original.b310f30704318a4eca35df42e1247e59.svg",
     "static/media/csharp-original.svg": "/windowsportfolio/static/media/csharp-original.7856ec6c3fb18079cbc4c4e0f853c52b.svg",
     "static/media/redux-original.svg": "/windowsportfolio/static/media/redux-original.7fe607aacc31f6e6199e70f16aae407e.svg",
     "static/media/javascript-original.svg": "/windowsportfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
@@ -59,15 +61,17 @@
     "static/media/css3-original.svg": "/windowsportfolio/static/media/css3-original.39769a8bd378bf410d6b381a8d88fa35.svg",
     "static/media/html5-original.svg": "/windowsportfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "static/media/vue-original.svg": "/windowsportfolio/static/media/vue-original.9f537ef871539b63299dea9ec24182f4.svg",
+    "static/media/pytorch-original.svg": "/windowsportfolio/static/media/pytorch-original.e64d02bdfe5507b5c8ec2ea495753d36.svg",
+    "static/media/tensorflow-original.svg": "/windowsportfolio/static/media/tensorflow-original.2c1801bb18ea8780cb4a759879fe54ce.svg",
     "static/media/nextjs-original.svg": "/windowsportfolio/static/media/nextjs-original.17fe1720dcc66b60fc1a5a70d104d1dd.svg",
-    "main.7e53b084.css.map": "/windowsportfolio/static/css/main.7e53b084.css.map",
-    "main.1be02a80.js.map": "/windowsportfolio/static/js/main.1be02a80.js.map",
-    "241.f5f862da.chunk.js.map": "/windowsportfolio/static/js/241.f5f862da.chunk.js.map",
-    "407.8715c071.chunk.js.map": "/windowsportfolio/static/js/407.8715c071.chunk.js.map",
-    "988.f2a62fdd.chunk.js.map": "/windowsportfolio/static/js/988.f2a62fdd.chunk.js.map"
+    "main.1b325ebd.css.map": "/windowsportfolio/static/css/main.1b325ebd.css.map",
+    "main.625d718e.js.map": "/windowsportfolio/static/js/main.625d718e.js.map",
+    "905.2ece9859.chunk.js.map": "/windowsportfolio/static/js/905.2ece9859.chunk.js.map",
+    "320.605ea9a1.chunk.js.map": "/windowsportfolio/static/js/320.605ea9a1.chunk.js.map",
+    "453.15e275af.chunk.js.map": "/windowsportfolio/static/js/453.15e275af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e53b084.css",
-    "static/js/main.1be02a80.js"
+    "static/css/main.1b325ebd.css",
+    "static/js/main.625d718e.js"
   ]
 }

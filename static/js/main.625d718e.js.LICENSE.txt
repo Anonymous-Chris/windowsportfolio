@@ -32,6 +32,44 @@
  * Licensed under MIT
  */
 
+/*!
+* TW Elements 1.1.0
+* 
+* TW Elements is an open-source UI kit of advanced components for TailwindCSS.
+* Copyright © 2023 MDBootstrap.com
+* 
+* Unless a custom, individually assigned license has been granted, this program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+* In addition, a custom license may be available upon request, subject to the terms and conditions of that license. Please contact tailwind@mdbootstrap.com for more information on obtaining a custom license.
+* This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+* 
+* If you would like to purchase a COMMERCIAL, non-AGPL license for TWE, please check out our pricing: https://tw-elements.com/pro/
+*/
+
+/*!
+* ZRender, a high performance 2d drawing library.
+*
+* Copyright (c) 2013, Baidu Inc.
+* All rights reserved.
+*
+* LICENSE
+* https://github.com/ecomfe/zrender/blob/master/LICENSE.txt
+*/
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
 /*! http://mths.be/fromcodepoint v0.1.0 by @mathias */
 
 /**
@@ -75,7 +113,7 @@
  */
 
 /**
- * @remix-run/router v1.7.0
+ * @remix-run/router v1.23.4
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -86,7 +124,7 @@
  */
 
 /**
- * React Router DOM v6.14.0
+ * React Router DOM v6.30.6
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -97,7 +135,7 @@
  */
 
 /**
- * React Router v6.14.0
+ * React Router v6.30.6
  *
  * Copyright (c) Remix Software Inc.
  *
